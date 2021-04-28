@@ -2,12 +2,16 @@
 <html>
 
 <head>
+    <!--Überschrift-->
     <title>Willkommen!</title>
 </head>
 
 <body>
+    <!--Titel-->
     <h1>Uni - Collaboratory</h1>
     <h2>Willkommen auf unserer Homepage!</h2>
+
+    <!--Platzhalter-->
     <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
         labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
@@ -18,12 +22,16 @@
     </p>
 
     <br>
+
+    <!--Login Formular-->
     <h2>Login - Formular</h2>
     <form action="/loginCheck" method="POST">
         <input type="text" id="username" name="username" placeholder="Benutzername"> <br><br>
         <input type="password" id="password" name="password" placeholder="Passwort"> <br><br>
-        <input type="submit" value="Sign me in!">
-      </form>
+        <input type="submit" value="Sign me in!"> <br> <br>
+        <div style="color: red;"><%=error%></div>
+        
+    </form>
 
 </body>
 

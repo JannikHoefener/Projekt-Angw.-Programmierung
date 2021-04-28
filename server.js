@@ -42,5 +42,22 @@ app.listen(3000, function () {
 
 //Zugriff auf views - Dateien
 app.get("/landingPage", function (req, res) {
-    res.render("landingPage", {});
+    res.render("landingPage", { error: "" });
 })
+
+app.post("/loginCheck", function (req, res) {
+    const param_username = req.body.username;
+    const param_password = req.body.password;
+    const sql_login = `SELECT * FROM loginlist WHERE username='${param_username}' AND password='${param_password}'`
+
+    db.all(sql_login,
+        function (err, rows) {
+            if (rows.length != 0) {
+                res.render("userStart", { username: param_username });
+            } else {
+                res.render("landingPage", { error: "Benutzername und/oder Passwort falsch oder nicht vergeben!" })
+            }
+        }
+    );
+
+});
