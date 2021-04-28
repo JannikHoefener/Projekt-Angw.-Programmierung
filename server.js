@@ -42,5 +42,5 @@ app.listen(3000, function () {
 
 //Zugriff auf views - Dateien
 app.get("/landingPage", function (req, res) {
-    res.sendFile(__dirname + "/views/landingPage.html");
+    res.render("landingPage", {});
 })
