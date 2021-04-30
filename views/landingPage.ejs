@@ -26,10 +26,11 @@
     <!--Login Formular-->
     <h2>Login - Formular</h2>
     <form action="/loginCheck" method="POST">
-        <input type="text" id="username" name="username" placeholder="Benutzername"> <br><br>
-        <input type="password" id="password" name="password" placeholder="Passwort"> <br><br>
-        <input type="submit" value="Sign me in!"> <br> <br>
-        <div style="color: red;"><%=error%></div>
+        
+        <input type="text" id="username" name="username" placeholder="Benutzername"> <br><br> <!--Benutzername - Eingabe-->
+        <input type="password" id="password" name="password" placeholder="Passwort"> <br><br> <!--Passwort - Eingabe-->
+        <input type="submit" value="Sign me in!"> <br> <br> <!--Submit - Button-->
+        <div style="color: red;"><%=error%></div> <!--Error Anzeige falls nicht übereinstimmt-->
         
     </form>
 
