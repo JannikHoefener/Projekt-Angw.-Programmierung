@@ -45,6 +45,10 @@ app.get("/landingPage", function (req, res) {
     res.render("landingPage", { error: "" });
 })
 
+app.get("/register", function (req, res) {
+    res.render("register", {});
+})
+
 //Login Function Now
 app.post("/loginCheck", function (req, res) {
     const param_username = req.body.username;
