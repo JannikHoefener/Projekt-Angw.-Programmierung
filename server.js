@@ -66,3 +66,30 @@ app.post("/loginCheck", function (req, res) {
     );
 
 });
+
+//Register
+app.post("/registerdb", function(req, res){
+    const username = req.body.username;
+    const password = req.body.password;
+    const lastname = req.body.lastname;
+    const firstname = req.body.firstname;
+    const email = req.body.email;
+    db.all(`SELECT * FROM loginlist WHERE username='${username}'`, function(err, rows){
+        if (rows && rows.length != 0){
+            res.send("Der Name ist vergeben");
+        }
+        else{
+            db.run(
+                `INSERT INTO loginlist (username, password) VALUES ("${username}", "${password}")`,
+                function (){
+                    console.log("Wurde gespeichert");
+                });
+            db.run(
+                `INSERT INTO registerlist (username, firstname, lastname, password, email) VALUES ("${username}", "${firstname}", "${lastname}", "${password}", "${email}")`,
+                function (err) {
+                    res.send("danke!!!! Du hurensohne");
+                }
+            )
+        };
+    });
+});
