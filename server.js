@@ -45,7 +45,20 @@ app.get("/landingPage", function (req, res) {
     res.render("landingPage", { error: "" });
 })
 
-//Login Function Now
+app.get("/register", function (req, res) {
+    res.render("register", { error: "" });
+})
+app.get("/funktion", function (req, res) {
+    res.render("functionPage", {});
+})
+app.get("/impressum", function (req, res) {
+    res.render("impressumPage", {});
+})
+app.get("/aboutUs", function (req, res) {
+    res.render("aboutUsPage", {});
+})
+
+//Login Function
 app.post("/loginCheck", function (req, res) {
     const param_username = req.body.username;
     const param_password = req.body.password;
@@ -62,3 +75,46 @@ app.post("/loginCheck", function (req, res) {
     );
 
 });
+
+//Register
+app.post("/registerdb", function (req, res) {
+    const username = req.body.username;
+    const password = req.body.password;
+    const lastname = req.body.lastname;
+    const firstname = req.body.firstname;
+    const email = req.body.email;
+
+    db.all(`SELECT * FROM loginlist WHERE username='${username}'`, function (err, rows) {
+        if (rows.length != 0) {
+            res.render("register", { error: "Dieser Benutzer existiert schon!" })
+        } else if (isValidPW(password) == false) {
+            res.render("register", { error: "Passwort muss länger als 9 Zeichen sein, 2 Großbuchstaben, 2 Kleinbuchstaben, 2 Ziffern und 2 Sonderzeichen haben." })
+        } else if (password != req.body.passwordrepeat) {
+            res.render("register", { error: "Passwort Wiederholung ist falsch!" })
+        } else {
+            db.run(
+                `INSERT INTO loginlist (username, password) VALUES ("${username}", "${password}")`,
+                function () {
+                    console.log("Wurde gespeichert");
+                });
+            db.run(
+                `INSERT INTO registerlist (username, firstname, lastname, password, email) VALUES ("${username}", "${firstname}", "${lastname}", "${password}", "${email}")`,
+                function (err) {
+                    res.render("userStart", { username: username });
+                }
+            )
+        };
+    });
+});
+
+//Passwort Validator
+function isValidPW(str) {
+    if (
+        str.length < 9 ||                      // kürzer als 9 zeichen
+        str.match(/[A-Z]/g).length < 2 ||      // keine 2 großbuchstaben
+        str.match(/[a-z]/g).length < 2 ||      // keine 2 kleinbuchstaben
+        str.match(/\d/g).length < 2 ||         // keine 2 ziffern
+        str.match(/[^a-zA-Z\d]/g).length < 2   // keine 2 sonderzeichen
+    ) return false;
+    return true;
+}

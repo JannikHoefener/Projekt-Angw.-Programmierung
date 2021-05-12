@@ -2,37 +2,76 @@
 <html>
 
 <head>
+    <!--META HUMAN-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Type-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Shade&display=swap"
+        rel="stylesheet">
+    <!--CSS Datei-->
+    <link href="/css/stylesheet.css" rel="stylesheet">
     <!--Überschrift-->
     <title>Willkommen!</title>
 </head>
 
 <body>
-    <!--Titel-->
-    <h1>Uni - Collaboratory</h1>
-    <h2>Willkommen auf unserer Homepage!</h2>
+    <main>
+        <div class="header">
+            <h1 class="logo">Uni - Collab'</h1>
+                <div class="header_buttons">
+                    <button class="function_button" onclick="document.location='/funktion'">Funktion</button>
+                    <button class="aboutUs_button" onclick="document.location='/aboutUs'">Über uns</button>
+                    <button class="impressum_button" onclick="document.location='/impressum'">Impressum</button>
+                </div>
+        </div>
+        <!--Titel-->
+        <div>
+            <h2 class="slogan">Weniger Stress, mehr Organisation</h2>
+        </div>
 
-    <!--Platzhalter-->
-    <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
-        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
+        <div class="middle">
 
-    <br>
+            <!--Platzhalter-->
+            <p class="texte">
+                Neu Hier? Kein Problem! 
+                <button class="button_register" onclick="document.location='/register'">Registrieren</button>
+            </p>
 
-    <!--Login Formular-->
-    <h2>Login - Formular</h2>
-    <form action="/loginCheck" method="POST">
-        
-        <input type="text" id="username" name="username" placeholder="Benutzername"> <br><br> <!--Benutzername - Eingabe-->
-        <input type="password" id="password" name="password" placeholder="Passwort"> <br><br> <!--Passwort - Eingabe-->
-        <input type="submit" value="Sign me in!"> <br> <br> <!--Submit - Button-->
-        <div style="color: red;"><%=error%></div> <!--Error Anzeige falls nicht übereinstimmt-->
-        
-    </form>
+            <!--Login Formular-->
+           
+            <form action="/loginCheck" method="POST">
+                <h3 class="form_heading">Melde dich an...</h3>
+                <input type="text" id="username" name="username" placeholder="Benutzername">
+                <!--Benutzername - Eingabe-->
+                <input type="password" id="password" name="password" placeholder="Passwort">
+                <!--Passwort anzeigen lassen-->
+                <label for="">
+                    <input style="margin-bottom: 3%; margin-top: 2%;" type="checkbox" onclick="myFunction()"> Passwort
+                    anzeigen
+                </label>
+                <h3 class="form_footer">... und starte sofort durch!</h3>
+                <!--Passwort - Eingabe-->
+                    <button class="button_login" type="submit">Anmelden</button>
+                <!--Submit - Button-->
+            </form>
+            <div style="color: red;">
+                <%=error%>
+            </div>
+            <!--Error Anzeige falls nicht übereinstimmt-->
+        </div>
+    </main>
+
+    <!--Funktion zum Anzeigen vom Passwort-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text"; //ändert beim draufklicken den "input-type" zu text, wodurch das eingetippte sichtbar wird
+            } else {
+                x.type = "password"; //beim entklicken wir das auf password zurückgesetzt
+            }
+        }
+    </script>
 
 </body>
 
