@@ -1,3 +1,4 @@
+// Pimmel
 //Initialisierung Express
 const express = require("express");
 const app = express();
@@ -46,6 +47,7 @@ app.get("/landingPage", function (req, res) {
 })
 
 app.get("/register", function (req, res) {
+<<<<<<< HEAD
     res.render("register", { error: "" });
 })
 app.get("/funktion", function (req, res) {
@@ -59,6 +61,12 @@ app.get("/aboutUs", function (req, res) {
 })
 
 //Login Function
+=======
+    res.render("register", {});
+})
+
+//Login Function Now
+>>>>>>> e12ca08016a490618d522b7050a9d418c7fd37be
 app.post("/loginCheck", function (req, res) {
     const param_username = req.body.username;
     const param_password = req.body.password;
@@ -77,12 +85,17 @@ app.post("/loginCheck", function (req, res) {
 });
 
 //Register
+<<<<<<< HEAD
 app.post("/registerdb", function (req, res) {
+=======
+app.post("/registerdb", function(req, res){
+>>>>>>> e12ca08016a490618d522b7050a9d418c7fd37be
     const username = req.body.username;
     const password = req.body.password;
     const lastname = req.body.lastname;
     const firstname = req.body.firstname;
     const email = req.body.email;
+<<<<<<< HEAD
 
     db.all(`SELECT * FROM loginlist WHERE username='${username}'`, function (err, rows) {
         if (rows.length != 0) {
@@ -95,16 +108,31 @@ app.post("/registerdb", function (req, res) {
             db.run(
                 `INSERT INTO loginlist (username, password) VALUES ("${username}", "${password}")`,
                 function () {
+=======
+    db.all(`SELECT * FROM loginlist WHERE username='${username}'`, function(err, rows){
+        if (rows && rows.length != 0){
+            res.send("Der Name ist vergeben");
+        }
+        else{
+            db.run(
+                `INSERT INTO loginlist (username, password) VALUES ("${username}", "${password}")`,
+                function (){
+>>>>>>> e12ca08016a490618d522b7050a9d418c7fd37be
                     console.log("Wurde gespeichert");
                 });
             db.run(
                 `INSERT INTO registerlist (username, firstname, lastname, password, email) VALUES ("${username}", "${firstname}", "${lastname}", "${password}", "${email}")`,
                 function (err) {
+<<<<<<< HEAD
                     res.render("userStart", { username: username });
+=======
+                    res.send("danke!!!! Du hurensohne");
+>>>>>>> e12ca08016a490618d522b7050a9d418c7fd37be
                 }
             )
         };
     });
+<<<<<<< HEAD
 });
 
 //Passwort Validator
@@ -118,3 +146,6 @@ function isValidPW(str) {
     ) return false;
     return true;
 }
+=======
+});
+>>>>>>> e12ca08016a490618d522b7050a9d418c7fd37be
