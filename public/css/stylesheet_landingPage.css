@@ -26,24 +26,21 @@ body {
     display: inline;
 
 }
-
 li{
     display: inline-block;
     margin: 0 !important;
     border-color: #707070;
 
 }
-
 a{
     text-decoration: none;
     color: #ffffff;
     border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
     padding-right: 15px;
     cursor: pointer;
+}
+a:hover {
+    color: #000000;
 }
 
 /*.activeSite{  Aktive Seite farbig hinterlegen
