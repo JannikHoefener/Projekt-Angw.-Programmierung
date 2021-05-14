@@ -1,25 +1,107 @@
+/* Main Code */
 /*Gesamte EJS*/
 
 * {
     box-sizing: border-box;
 }
 
-/*Hintergrundfarbe für die "Register" - Seite*/
+/*Hintergrundbild für die LandingPage*/
 
 html {
+    background-color: #B8AB98;
     height: 100%;
     background-position: center;
     position: relative;
     color: black;
     background-size: cover;
-    background-color: #C2BAB6;
     background-attachment: fixed;
 }
 
 body {
     height: 99%;
-    margin-left: 0%;
-    margin-top: 0%;
+}
+
+/*Header Klassen*/
+
+.header {
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.header_buttons {
+    /*Rechte Seite des Headers mit den Buttons*/
+    float: right;
+    margin: 10rem 14rem 0 0;
+}
+
+.logo {
+    /*Logo "Uni-Collab'" auf der linken Seite*/
+    float: left;
+    margin-left: 5%;
+    font-family: 'Bungee', cursive;
+    font-size: 6.75rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+
+.function_button {
+    /*Button "Funktion" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.function_button:hover {
+    color: #000000;
+}
+
+.aboutUs_button {
+    /*Button "About Us" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.aboutUs_button:hover {
+    color: #000000;
+}
+
+.impressum_button {
+    /*Button "Impressum" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-right: 1px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.impressum_button:hover {
+    color: #000000;
 }
 
 /*Klassen für die Zentrierung*/
@@ -37,7 +119,7 @@ main {
 /*Linke Seite der Website mit dem Bild*/
 
 .reg_left {
-    background-image: url("../ImpressumCut.png");
+    background-image: url("../Register.jpg");
     height: 100%;
     width: 60.375rem;
     position: absolute;
@@ -61,166 +143,29 @@ main {
     -webkit-text-stroke-color: black;
 }
 
-/*Rechte Seite der Website*/
 
-.reg_right {
-    display: flex;
-    float: right;
-    height: 100%;
-    width: 65%;
-    flex-direction: column;
-    align-items: center;
-}
 
-.header_buttons {
-    /*Wrapper-Klasse für die Buttons auf der rechten Seite*/
-    margin-top: 5rem;
-}
-
-.function_button {
-    /*Button "Funktion" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    padding-right: 15px;
-    cursor: pointer;
-}
-.function_button:hover {
-    color: #000000;
-  }
-
-.aboutUs_button {
-    /*Button "About Us" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    padding-right: 15px;
-    cursor: pointer;
-}
-.aboutUs_button:hover {
-    color: #000000;
-  }
-
-.impressum_button {
-    /*Button "Impressum" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-right: 1px;
-    border: 0;
-    padding: 5px;
-    cursor: pointer;
-}
-.impressum_button:hover {
-    color: #000000;
-  }
-
-/*Registerformular - Styling auf der rechten Seite der Website*/
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.07rem;
-    font-family: 'Bungee', cursive;
-    color: white;
-    margin-top: 5rem;
-}
-
-.form_heading {
-    /*Text über dem Formular "Melde dich an..."*/
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size: 36px;
-    color: #26222681;
-}
-
-.form_footer {
-    /*Text unter dem Formular "...und starte sofort durch"*/
-    margin-top: 0%;
-    margin-bottom: 1%;
-    font-size: 23px;
-    color: #26222681;
-}
-
-input[type=text] {
-    /*Typ: Text*/
-    font-family: 'Bungee', cursive;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.582);
-    padding: 10px 20px;
-    margin: 2%;
-}
-
-input[type=password] {
-    /*Typ: Passwort*/
-    font-family: 'Bungee', cursive;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.582);
-    padding: 10px 20px;
-    margin: 2%;
-}
-
-input[type=email] {
-    /*Typ: E-Mail*/
-    font-family: 'Bungee', cursive;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.582);
-    padding: 10px 20px;
-    margin: 2%;
-}
-
-select {
-    /*Styling des Auswahlfeldes für Hochschulen*/
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-}
-
-.container {
-    /*Wrapper-Klasse für die Geschlechtsauswahl*/
-    margin: 10px;
-}
-
-.button_signup {
-    /*Button zur Registrierung und Weiterleitung auf userStart.ejs*/
+.button_back {
+    /*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
     font-family: 'Bungee', cursive;
     height: 3.75rem;
     width: 15rem;
     font-size: 21px;
-    color: #4D5258;
-    background-color: #EFECE9;
+    color: #EFECE9;
+    background-color: #5E5E59;
     border: solid;
     border-color: #707070;
     border-radius: 25px;
     cursor: pointer;
 }
-.button_signup:hover {
+.button_back:hover {
     color: #000000;
     background-color: #eceb88;
   }
+
+
+
+
 
 .button_back {
     /*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
