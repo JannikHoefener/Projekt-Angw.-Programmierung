@@ -45,11 +45,6 @@ app.get("/landingPage", function (req, res) {
 })
 
 app.get("/register", function (req, res) {
-<<<<<<< HEAD
-    res.render("register", {});
-})
-
-=======
     res.render("register", { error: "" });
 })
 app.get("/funktion", function (req, res) {
@@ -63,7 +58,6 @@ app.get("/aboutUs", function (req, res) {
 })
 
 //Login Function
->>>>>>> b7652c593c3832c07df94021aabd1dbe1d853d3c
 app.post("/loginCheck", function (req, res) {
     const param_username = req.body.username;
     const param_password = req.body.password;
