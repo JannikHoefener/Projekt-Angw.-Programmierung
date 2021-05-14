@@ -16,9 +16,8 @@
 
 <body>
     <main>
-        <div class="header">
-            <h1 class="logo">Uni - Collab'</h1>
-            <nav class="header_buttons">
+    <div class="header">   
+        <nav class="header_buttons">
                 <ul class="headLineLinks">
                     <li>
                         <a href="/funktion">Funktion</a>
@@ -31,25 +30,25 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-        <!--Linke Seite der Website-->
-        <div class="reg_left">
-        </div>
-        <div class="reg_right">
-            <form action="/registerdb" method="POST">
-                <h2 class="form_heading">Registrier dich...</h2>
-                <!--Vorname-->
-                <input type="text" name="firstname" placeholder="Vorname">
-                <!--Nachname-->
-                <input type="text" name="lastname" placeholder="Nachname">
-                <!--Benutzername-->
-                <input type="text" name="username" placeholder="Benutzername" required>
-                <!--E-Mail-->
-                <input type="email" name="email" placeholder="E-Mail" required>
-                <!--Passwort-->
-                <input type="password" name="password" placeholder="Passwort" required>
-                <!--Passwort wiederholen-->
-                <input type="password" name="passwordrepeat" placeholder="Passwort wiederholen" required>
+    </div>
+    <div class="reg_left">
+        <h1 class="logo">Uni - Collab'</h1>
+    </div>  
+    <div class="reg_right">
+        <form action="/registerdb" method="POST">
+            <h2 class="form_heading">Registrier dich...</h2>
+            <!--Vorname-->
+            <input type="text" name="firstname" placeholder="Vorname">
+            <!--Nachname-->
+            <input type="text" name="lastname" placeholder="Nachname">
+            <!--Benutzername-->
+            <input type="text" name="username" placeholder="Benutzername" required>
+            <!--E-Mail-->
+            <input type="email" name="email" placeholder="E-Mail" required>
+            <!--Passwort-->
+            <input type="password" name="password" placeholder="Passwort" required>
+            <!--Passwort wiederholen-->
+            <input type="password" name="passwordrepeat" placeholder="Passwort wiederholen" required>
 
                 <label style="font-size: 20px;" for="uni">Hochschule:
                     <select name="uni" size="1">
