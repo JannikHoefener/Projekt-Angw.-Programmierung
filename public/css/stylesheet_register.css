@@ -17,9 +17,7 @@ html {
 }
 
 body {
-    height: 99%;
-    margin-left: 0%;
-    margin-top: 0%;
+    height: 100%;
 }
 /*Klassen für die Zentrierung*/
 
@@ -47,10 +45,10 @@ main {
     font-size: 25px;
     justify-content: right;
     display: flex;
-    margin-top: 150px;
-    margin-right: 150px;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 3%;
+    margin-right: 10%;
 }
 .headLineLinks{
     display: inline;
@@ -123,12 +121,15 @@ a:hover {
 /*Rechte Seite der Website*/
 
 .reg_right {
+    position: absolute;
     display: flex;
-    float: right;
+    float: left;
     height: 100%;
     width: 65%;
     flex-direction: column;
     align-items: center;
+    margin-left: 50%;
+    margin-top: 8%;
 }
 /*Registerformular - Styling auf der rechten Seite der Website*/
 
