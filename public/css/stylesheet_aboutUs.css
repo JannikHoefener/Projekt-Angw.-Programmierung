@@ -1,19 +1,18 @@
-/* Main Code */
 /*Gesamte EJS*/
 
 * {
     box-sizing: border-box;
 }
 
-/*Hintergrundbild für die LandingPage*/
+/*Hintergrundfarbe für die "Funktionen" - Seite*/
 
 html {
-    background-color: #B8AB98;
     height: 100%;
     background-position: center;
     position: relative;
     color: black;
     background-size: cover;
+    background-color: #C2BAB6;
     background-attachment: fixed;
 }
 
@@ -41,9 +40,15 @@ body {
     margin-top: 3%;
     margin-right: 10%;
 }
+
+.headLineLinks{
+    display: inline;
+
+}
 li{
     display: inline-block;
-
+    margin: 0 !important;
+    border-color: #707070;
 
 }
 a{
@@ -56,8 +61,12 @@ a{
 a:hover {
     color: #000000;
 }
+
 /*.activeSite{  Aktive Seite farbig hinterlegen
+
 }*/
+
+
 
 .logo {
     /*Logo "Uni-Collab'" auf der linken Seite*/
@@ -71,7 +80,9 @@ a:hover {
                  -2px  2px 2px black,
                  -2px -2px 2px black;
 }
+
 /*Klassen für die Zentrierung*/
+
 main {
     /*"Wrapper"-Klasse*/
     height: 100%;
@@ -81,6 +92,7 @@ main {
     align-items: center;
     align-self: center;
 }
+
 .middle {
     /*hauptsächliche Zentrierung*/
     width: 100%;

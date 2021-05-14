@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-/*Hintergrundbild für die LandingPage*/
+/*Hintergrundfarbe für die "Funktionen" - Seite*/
 
 html {
-    background-image: url("../MainBackground.jpg");
     height: 100%;
     background-position: center;
     position: relative;
     color: black;
     background-size: cover;
+    background-color: #C2BAB6;
     background-attachment: fixed;
 }
 
@@ -21,24 +21,6 @@ body {
 }
 
 /*Header Klassen*/
-
-li{
-    display: inline-block;
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-    border-color: #707070;
-    cursor: pointer;
-}
-a:hover {
-    color: #000000;
-}
-
-/*.activeSite{  Aktive Seite farbig hinterlegen
-
-}*/
-
 .header {
     width: 100%;
     text-align: center;
@@ -59,6 +41,33 @@ a:hover {
     margin-right: 10%;
 }
 
+.headLineLinks{
+    display: inline;
+
+}
+li{
+    display: inline-block;
+    margin: 0 !important;
+    border-color: #707070;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    border-color: #707070;
+    padding-right: 15px;
+    cursor: pointer;
+}
+a:hover {
+    color: #000000;
+}
+
+/*.activeSite{  Aktive Seite farbig hinterlegen
+
+}*/
+
+
+
 .logo {
     /*Logo "Uni-Collab'" auf der linken Seite*/
     float: left;
@@ -70,20 +79,6 @@ a:hover {
                   2px -2px 2px black,
                  -2px  2px 2px black,
                  -2px -2px 2px black;
-}
-
-/*Slogan-Klasse unter dem Header "Weniger Stress, mehr Organisation"*/
-
-.slogan {
-    display: flex;
-    margin-top: 0%;
-    font-family: 'Bungee Shade', cursive;
-    font-size: 4.375rem;
-    color: #ffffff;
-/*    text-shadow: 2px 2px 10px black; */
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 0.4px;
-    -webkit-text-stroke-color: rgb(112, 112, 112);
 }
 
 /*Klassen für die Zentrierung*/
@@ -98,6 +93,7 @@ main {
     align-self: center;
 }
 
+
 .middle {
     /*hauptsächliche Zentrierung*/
     width: 100%;
@@ -107,6 +103,16 @@ main {
 }
 
 /*Registrier-Feld auf der linken Seite der .middle-Klasse*/
+
+.slogan {
+    display: flex;
+    margin-top: 0%;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4.375rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgb(112, 112, 112);
+}
 
 .texte {
     height: 225px;
