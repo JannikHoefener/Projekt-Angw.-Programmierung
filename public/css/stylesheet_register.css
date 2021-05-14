@@ -29,8 +29,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-self: center;
 }
 /*Header Klassen*/
 .header {
@@ -101,15 +99,11 @@ a:hover {
     flex-direction: column;
     background-size: cover;
     left: 0px;
-    bottom: 0px;
-    top: 0px;
-    right: 0px
 }
 
 .logo {
     /*Logo auf der linken Seite*/
     float: left;
-    margin-top: -3%;
     margin-left: 9%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
@@ -124,11 +118,13 @@ a:hover {
 
 .reg_right {
     display: flex;
+    position: absolute;
     float: right;
     height: 100%;
     width: 65%;
     flex-direction: column;
     align-items: center;
+    right: 0px;
 }
 /*Registerformular - Styling auf der rechten Seite der Website*/
 

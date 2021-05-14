@@ -16,9 +16,9 @@
 
 <body>
     <main>
-    <div class="header">
-        <h1 class="logo">Uni - Collab'</h1>
-        <nav class="header_buttons">
+        <div class="header">
+            <h1 class="logo">Uni - Collab'</h1>
+            <nav class="header_buttons">
                 <ul class="headLineLinks">
                     <li>
                         <a href="/funktion">Funktion</a>
@@ -31,59 +31,59 @@
                     </li>
                 </ul>
             </nav>
-    </div>
-    <!--Linke Seite der Website-->
-    <div class="reg_left">
-    </div>
+        </div>
+        <!--Linke Seite der Website-->
+        <div class="reg_left">
+        </div>
         <div class="reg_right">
-        <form action="/registerdb" method="POST">
-            <h2 class="form_heading">Registrier dich...</h2>
-            <!--Vorname-->
-            <input type="text" name="firstname" placeholder="Vorname">
-            <!--Nachname-->
-            <input type="text" name="lastname" placeholder="Nachname">
-            <!--Benutzername-->
-            <input type="text" name="username" placeholder="Benutzername" required>
-            <!--E-Mail-->
-            <input type="email" name="email" placeholder="E-Mail" required>
-            <!--Passwort-->
-            <input type="password" name="password" placeholder="Passwort" required>
-            <!--Passwort wiederholen-->
-            <input type="password" name="passwordrepeat" placeholder="Passwort wiederholen" required>
+            <form action="/registerdb" method="POST">
+                <h2 class="form_heading">Registrier dich...</h2>
+                <!--Vorname-->
+                <input type="text" name="firstname" placeholder="Vorname">
+                <!--Nachname-->
+                <input type="text" name="lastname" placeholder="Nachname">
+                <!--Benutzername-->
+                <input type="text" name="username" placeholder="Benutzername" required>
+                <!--E-Mail-->
+                <input type="email" name="email" placeholder="E-Mail" required>
+                <!--Passwort-->
+                <input type="password" name="password" placeholder="Passwort" required>
+                <!--Passwort wiederholen-->
+                <input type="password" name="passwordrepeat" placeholder="Passwort wiederholen" required>
 
-            <label style="font-size: 20px;" for="uni">Hochschule:
-                <select name="uni" size="1">
-                    <option>HAW Hamburg</option>
-                    <option>Universität Hamburg</option>
-                    <option>Universität Kiel</option>
-                    <option>FH Wedel</option>
-                    <option>TUHH Hamburg</option>
-                </select>
-            </label>
-            <!--ermöglicht eine Auswahl von mehreren Möglichkeiten -->
-            <div class="container">
-                <label style="font-size: 20px;" for="gender">Geschlecht:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Mann</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Frau</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Divers</label>
-            </div>
-            <h2 class="form_footer">...und starte sofort durch!</h2>
-            <!--Registrieren Button-->
-            <button class="button_signup" type="submit">Sign me Up!</button><br>
-            <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
-        </form>
-    </div>
+                <label style="font-size: 20px;" for="uni">Hochschule:
+                    <select name="uni" size="1">
+                        <option>HAW Hamburg</option>
+                        <option>Universität Hamburg</option>
+                        <option>Universität Kiel</option>
+                        <option>FH Wedel</option>
+                        <option>TUHH Hamburg</option>
+                    </select>
+                </label>
+                <!--ermöglicht eine Auswahl von mehreren Möglichkeiten -->
+                <div class="container">
+                    <label style="font-size: 20px;" for="gender">Geschlecht:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Mann</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Frau</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Divers</label>
+                </div>
+                <h2 class="form_footer">...und starte sofort durch!</h2>
+                <!--Registrieren Button-->
+                <button class="button_signup" type="submit">Sign me Up!</button><br>
+                <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
+            </form>
+        </div>
 
-    <!--Error Anzeige falls etwas nicht übereinstimmt-->
-    <div style="color: red;">
-        <%=error%>
-    </div>
+        <!--Error Anzeige falls etwas nicht übereinstimmt-->
+        <div style="color: red;">
+            <%=error%>
+        </div>
 
-    <br>
-</main>
+        <br>
+    </main>
 </body>
 
 </html>
