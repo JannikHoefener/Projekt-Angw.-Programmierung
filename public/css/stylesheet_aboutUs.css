@@ -22,31 +22,6 @@ body {
 }
 
 /*Header Klassen*/
-.headLineLinks{
-    display: inline;
-
-}
-li{
-    display: inline-block;
-    margin: 0 !important;
-    border-color: #707070;
-
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-    border-color: #707070;
-    padding-right: 15px;
-    cursor: pointer;
-}
-a:hover {
-    color: #000000;
-}
-
-/*.activeSite{  Aktive Seite farbig hinterlegen
-
-}*/
-
 .header {
     width: 100%;
     text-align: center;
@@ -61,11 +36,28 @@ a:hover {
     font-size: 25px;
     justify-content: right;
     display: flex;
-    margin-top: 150px;
-    margin-right: 150px;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 3%;
+    margin-right: 10%;
 }
+li{
+    display: inline-block;
+
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    border-color: #707070;
+    padding-right: 15px;
+    cursor: pointer;
+}
+a:hover {
+    color: #000000;
+}
+/*.activeSite{  Aktive Seite farbig hinterlegen
+}*/
 
 .logo {
     /*Logo "Uni-Collab'" auf der linken Seite*/
@@ -73,16 +65,13 @@ a:hover {
     margin-left: 5%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 10px black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
+    color: rgb(255, 255, 255);
+    text-shadow:  2px  2px 2px black,
+                  2px -2px 2px black,
+                 -2px  2px 2px black,
+                 -2px -2px 2px black;
 }
-
-
 /*Klassen für die Zentrierung*/
-
 main {
     /*"Wrapper"-Klasse*/
     height: 100%;
@@ -92,7 +81,6 @@ main {
     align-items: center;
     align-self: center;
 }
-
 .middle {
     /*hauptsächliche Zentrierung*/
     width: 100%;
@@ -102,7 +90,6 @@ main {
     align-items: center;
     align-self: center;
 }
-
 .button_back {
     /*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
     font-family: 'Bungee', cursive;
@@ -125,17 +112,6 @@ main {
 
 
 /* Janniks Code */
-.headline1 {
-    font-family: 'Bungee', cursive;
-    font-size: 4.375rem;
-    color: rgb(255, 255, 255);
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-
 .headline2 {
     font-family: 'Bungee', cursive;
     font-size: 3.375rem;
