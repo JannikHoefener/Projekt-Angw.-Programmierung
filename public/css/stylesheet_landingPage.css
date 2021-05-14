@@ -73,11 +73,11 @@ a:hover {
     margin-left: 5%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 10px black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
+    color: rgb(255, 255, 255);
+    text-shadow:  2px  2px 2px black,
+                  2px -2px 2px black,
+                 -2px  2px 2px black,
+                 -2px -2px 2px black;
 }
 
 /*Slogan-Klasse unter dem Header "Weniger Stress, mehr Organisation"*/
@@ -87,7 +87,9 @@ a:hover {
     margin-top: 0%;
     font-family: 'Bungee Shade', cursive;
     font-size: 4.375rem;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
+/*    text-shadow: 2px 2px 10px black; */
+    -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: rgb(112, 112, 112);
 }

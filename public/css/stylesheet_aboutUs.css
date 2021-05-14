@@ -22,6 +22,30 @@ body {
 }
 
 /*Header Klassen*/
+.headLineLinks{
+    display: inline;
+
+}
+li{
+    display: inline-block;
+    margin: 0 !important;
+    border-color: #707070;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    border-color: #707070;
+    padding-right: 15px;
+    cursor: pointer;
+}
+a:hover {
+    color: #000000;
+}
+
+/*.activeSite{  Aktive Seite farbig hinterlegen
+
+}*/
 
 .header {
     width: 100%;
@@ -32,8 +56,15 @@ body {
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
-    float: right;
-    margin: 10rem 14rem 0 0;
+    /*Button "Funktion" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    justify-content: right;
+    display: flex;
+    margin-top: 150px;
+    margin-right: 150px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .logo {
@@ -49,60 +80,6 @@ body {
     -webkit-text-stroke-color: black;
 }
 
-.function_button {
-    /*Button "Funktion" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    padding-right: 15px;
-    cursor: pointer;
-}
-
-.function_button:hover {
-    color: #000000;
-}
-
-.aboutUs_button {
-    /*Button "About Us" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    padding-right: 15px;
-    cursor: pointer;
-}
-
-.aboutUs_button:hover {
-    color: #000000;
-}
-
-.impressum_button {
-    /*Button "Impressum" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-right: 1px;
-    border: 0;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.impressum_button:hover {
-    color: #000000;
-}
 
 /*Klassen für die Zentrierung*/
 

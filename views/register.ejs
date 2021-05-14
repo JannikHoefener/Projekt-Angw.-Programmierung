@@ -15,17 +15,27 @@
 </head>
 
 <body>
+    <main>
+    <div class="header">
+        <h1 class="logo">Uni - Collab'</h1>
+        <nav class="header_buttons">
+                <ul class="headLineLinks">
+                    <li>
+                        <a href="/funktion">Funktion</a>
+                    </li>
+                    <li>
+                        <a href="/aboutUs">Über uns</a>
+                    </li>
+                    <li>
+                        <a href="/impressum">Impressum</a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
     <!--Linke Seite der Website-->
     <div class="reg_left">
-        <!--Logo des Projekts-->
-        <h1 class="logo">Uni - Collab'</h1>
     </div>
-    <div class="reg_right">
-        <div class="header_buttons">
-            <button class="function_button" onclick="document.location='/funktion'">Funktion</button>
-            <button class="aboutUs_button" onclick="document.location='/aboutUs'">Über uns</button>
-            <button class="impressum_button" onclick="document.location='/impressum'">Impressum</button>
-        </div>
+        <div class="reg_right">
         <form action="/registerdb" method="POST">
             <h2 class="form_heading">Registrier dich...</h2>
             <!--Vorname-->
@@ -73,6 +83,7 @@
     </div>
 
     <br>
+</main>
 </body>
 
 </html>
