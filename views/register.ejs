@@ -50,39 +50,39 @@
             <!--Passwort wiederholen-->
             <input type="password" name="passwordrepeat" placeholder="Passwort wiederholen" required>
 
-            <label style="font-size: 20px;" for="uni">Hochschule:
-                <select name="uni" size="1">
-                    <option>HAW Hamburg</option>
-                    <option>Universität Hamburg</option>
-                    <option>Universität Kiel</option>
-                    <option>FH Wedel</option>
-                    <option>TUHH Hamburg</option>
-                </select>
-            </label>
-            <!--ermöglicht eine Auswahl von mehreren Möglichkeiten -->
-            <div class="container">
-                <label style="font-size: 20px;" for="gender">Geschlecht:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Mann</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Frau</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Divers</label>
-            </div>
-            <h2 class="form_footer">...und starte sofort durch!</h2>
-            <!--Registrieren Button-->
-            <button class="button_signup" type="submit">Sign me Up!</button><br>
-            <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
-        </form>
-    </div>
+                <label style="font-size: 20px;" for="uni">Hochschule:
+                    <select name="uni" size="1">
+                        <option>HAW Hamburg</option>
+                        <option>Universität Hamburg</option>
+                        <option>Universität Kiel</option>
+                        <option>FH Wedel</option>
+                        <option>TUHH Hamburg</option>
+                    </select>
+                </label>
+                <!--ermöglicht eine Auswahl von mehreren Möglichkeiten -->
+                <div class="container">
+                    <label style="font-size: 20px;" for="gender">Geschlecht:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Mann</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Frau</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Divers</label>
+                </div>
+                <h2 class="form_footer">...und starte sofort durch!</h2>
+                <!--Registrieren Button-->
+                <button class="button_signup" type="submit">Sign me Up!</button><br>
+                <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
+            </form>
+        </div>
 
-    <!--Error Anzeige falls etwas nicht übereinstimmt-->
-    <div style="color: red;">
-        <%=error%>
-    </div>
+        <!--Error Anzeige falls etwas nicht übereinstimmt-->
+        <div style="color: red;">
+            <%=error%>
+        </div>
 
-    <br>
-</main>
+        <br>
+    </main>
 </body>
 
 </html>

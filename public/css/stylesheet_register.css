@@ -20,6 +20,13 @@ body {
     height: 99%;
 }
 
+main {
+    /*"Wrapper"-Klasse*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 /*Header Klassen*/
 .header {
     width: 100%;
@@ -103,15 +110,11 @@ main {
     flex-direction: column;
     background-size: cover;
     left: 0px;
-    bottom: 0px;
-    top: 0px;
-    right: 0px
 }
 
 .logo {
     /*Logo auf der linken Seite*/
     float: left;
-    margin-top: -3%;
     margin-left: 9%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
