@@ -31,7 +31,7 @@ const session = require('express-session');
 app.use(session({
     secret: 'example',
     saveUninitialized: false,
-    resave: false,
+    resave: true,
     cookie: { maxAge: 60 * 60 * 1000 }
 }));
 
@@ -59,8 +59,13 @@ app.get("/impressum", function (req, res) {
 app.get("/aboutUs", function (req, res) {
     res.render("aboutUsPage", {});
 })
-app.get("/respons", function (req, res) {
-    res.render("LPResponsTest", {});
+app.get("/userStart", function (req, res) {
+    if (req.session.username) {
+        res.render("userStart", {username: req.session.username});
+    } else {
+        res.redirect("landingPage")
+    }
+    
 })
 
 //Login Function
@@ -72,6 +77,7 @@ app.post("/loginCheck", function (req, res) {
     db.all(sql_login,
         function (err, rows) {
             if (rows.length != 0 && bcrypt.compareSync(param_password, rows[0].password)) {
+                req.session.username = param_username;
                 res.render("userStart", { username: param_username });
             } else {
                 res.render("landingPage", { error: "Benutzername und/oder Passwort falsch oder nicht vergeben!" })
@@ -123,21 +129,3 @@ function isValidPW(str) {
     ) return false;
     return true;
 }
-
-//Kann später gelöscht werden
-//Login Function
-app.post("/loginCheck", function (req, res) {
-    const param_username = req.body.username;
-    const param_password = req.body.password;
-    const sql_login = `SELECT * FROM loginlist WHERE username='${param_username}'`
-
-    db.all(sql_login,
-        function (err, rows) {
-            if (rows.length != 0 && bcrypt.compareSync(param_password, rows[0].password)) {
-                res.render("userStart", { username: param_username });
-            } else {
-                res.render("LPResponsTest", { error: "Benutzername und/oder Passwort falsch oder nicht vergeben!" })
-            }
-        }
-    );
-});

@@ -18,20 +18,11 @@
     <main>
         <div class="header">
             <h1 class="logo">Uni - Collab'</h1>
-            <nav class="header_buttons">
-                <ul class="headLineLinks">
-                    <li>
-                        <a href="/funktion">Funktion</a>
-                    </li>
-                    <li>
-                        <a href="/aboutUs">Über uns</a>
-                    </li>
-                    <li>
-                        <a href="/impressum">Impressum</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <div class="header_buttons">
+                <button class="function_button" onclick="document.location='/funktion'">Funktion</button>
+                <button class="aboutUs_button" onclick="document.location='/aboutUs'">Über uns</button>
+                <button class="impressum_button" onclick="document.location='/impressum'">Impressum</button>
+            </div>
         </div>
 
         <!--Slogan-->
@@ -48,7 +39,10 @@
 
             <!--Anmeldeformular auf der rechten Seite der .middle-Klasse-->
             <form action="/loginCheck" method="POST">
-                <h3 class="form_heading">Melde dich an...</h3>
+                <div class="form_heading" onclick="popup()">Melde dich an...
+                    <!--PopUp-->
+                    <span class="popuptext" id="myPopup">Bitte melde dich an!</span>
+                </div>
                 <!--Benutzername - Eingabe-->
                 <input type="text" id="username" name="username" placeholder="Benutzername">
                 <!--Passwort - Eingabe-->
@@ -61,12 +55,11 @@
                 <h3 class="form_footer">... und starte sofort durch!</h3>
                 <!--Submit - Button-->
                 <button class="button_login" type="submit">Anmelden</button>
-
+                <div style="color: red; font-family: Helvetica;">
+                    <%=error%>
+                </div>
             </form>
             <!--Error Anzeige falls nicht übereinstimmt-->
-            <div style="color: red;">
-                <%=error%>
-            </div>
         </div>
     </main>
 
@@ -80,6 +73,13 @@
                 x.type = "password"; //beim entklicken wir das auf password zurückgesetzt
             }
         }
+
+        //Wenn man auf den Text "Melde dich an..." klickt kommt ein PopUp
+        function popup() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
     </script>
 
 </body>

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Hintergrundfarbe für die "Funktionen" - Seite*/
+/*Hintergrundfarbe für die "Register" - Seite*/
 
 html {
     height: 100%;
@@ -18,74 +18,8 @@ html {
 
 body {
     height: 99%;
-}
-
-main {
-    /*"Wrapper"-Klasse*/
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-/*Header Klassen*/
-.header {
-    width: 100%;
-    text-align: center;
-    justify-content: space-between;
-    color: rgb(0, 0, 0);
-}
-
-.header_buttons {
-    /*Rechte Seite des Headers mit den Buttons*/
-    /*Button "Funktion" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    justify-content: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 3%;
-    margin-right: 10%;
-}
-
-.headLineLinks{
-    display: inline;
-
-}
-li{
-    display: inline-block;
-    margin: 0 !important;
-    border-color: #707070;
-
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-    border-color: #707070;
-    padding-right: 15px;
-    cursor: pointer;
-}
-a:hover {
-    color: #000000;
-}
-
-/*.activeSite{  Aktive Seite farbig hinterlegen
-
-}*/
-
-
-
-.logo {
-    /*Logo "Uni-Collab'" auf der linken Seite*/
-    float: left;
-    margin-left: 5%;
-    font-family: 'Bungee', cursive;
-    font-size: 6.75rem;
-    color: rgb(255, 255, 255);
-    text-shadow:  2px  2px 2px black,
-                  2px -2px 2px black,
-                 -2px  2px 2px black,
-                 -2px -2px 2px black;
+    margin-left: 0%;
+    margin-top: 0%;
 }
 
 /*Klassen für die Zentrierung*/
@@ -100,44 +34,101 @@ main {
     align-self: center;
 }
 
+/*Linke Seite der Website mit dem Bild*/
+
 .reg_left {
     background-image: url("../Register.jpg");
     height: 100%;
-    width: 60.375rem;
+    width: 40%;
     position: absolute;
     display: flex;
     float: left;
     flex-direction: column;
     background-size: cover;
-    left: 0px;
 }
 
 .logo {
     /*Logo auf der linken Seite*/
     float: left;
+    margin-top: -3%;
     margin-left: 9%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 10px black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;
+    color: rgb(255, 255, 255);
+    text-shadow:  2px  2px 2px black,
+                  2px -2px 2px black,
+                 -2px  2px 2px black,
+                 -2px -2px 2px black;
 }
 
 /*Rechte Seite der Website*/
 
 .reg_right {
-    position: absolute;
     display: flex;
-    float: left;
+    float: right;
     height: 100%;
-    width: 65%;
+    width: 60%;
     flex-direction: column;
     align-items: center;
-    margin-left: 50%;
-    margin-top: 8%;
 }
+
+.header_buttons {
+    /*Wrapper-Klasse für die Buttons auf der rechten Seite*/
+    margin-top: 5rem;
+}
+
+.function_button {
+    /*Button "Funktion" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+.function_button:hover {
+    color: #000000;
+  }
+
+.aboutUs_button {
+    /*Button "About Us" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+.aboutUs_button:hover {
+    color: #000000;
+  }
+
+.impressum_button {
+    /*Button "Impressum" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-right: 1px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+.impressum_button:hover {
+    color: #000000;
+  }
+
 /*Registerformular - Styling auf der rechten Seite der Website*/
 
 form {
@@ -227,8 +218,8 @@ select {
     cursor: pointer;
 }
 .button_signup:hover {
-    color: #000000;
-    background-color: #eceb88;
+    color: #ffffff;
+    background-color: #5E5E59;
   }
 
 .button_back {
@@ -245,6 +236,6 @@ select {
     cursor: pointer;
 }
 .button_back:hover {
-    color: #000000;
-    background-color: #eceb88;
+    color: #4D5258;
+    background-color: #EFECE9;
   }

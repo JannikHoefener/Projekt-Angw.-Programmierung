@@ -15,26 +15,17 @@
 </head>
 
 <body>
-    <main>
-    <div class="header">   
-        <nav class="header_buttons">
-                <ul class="headLineLinks">
-                    <li>
-                        <a href="/funktion">Funktion</a>
-                    </li>
-                    <li>
-                        <a href="/aboutUs">Über uns</a>
-                    </li>
-                    <li>
-                        <a href="/impressum">Impressum</a>
-                    </li>
-                </ul>
-            </nav>
-    </div>
+    <!--Linke Seite der Website-->
     <div class="reg_left">
+        <!--Logo des Projekts-->
         <h1 class="logo">Uni - Collab'</h1>
-    </div>  
+    </div>
     <div class="reg_right">
+        <div class="header_buttons">
+            <button class="function_button" onclick="document.location='/funktion'">Funktion</button>
+            <button class="aboutUs_button" onclick="document.location='/aboutUs'">Über uns</button>
+            <button class="impressum_button" onclick="document.location='/impressum'">Impressum</button>
+        </div>
         <form action="/registerdb" method="POST">
             <h2 class="form_heading">Registrier dich...</h2>
             <!--Vorname-->
@@ -50,39 +41,36 @@
             <!--Passwort wiederholen-->
             <input type="password" name="passwordrepeat" placeholder="Passwort wiederholen" required>
 
-                <label style="font-size: 20px;" for="uni">Hochschule:
-                    <select name="uni" size="1">
-                        <option>HAW Hamburg</option>
-                        <option>Universität Hamburg</option>
-                        <option>Universität Kiel</option>
-                        <option>FH Wedel</option>
-                        <option>TUHH Hamburg</option>
-                    </select>
-                </label>
-                <!--ermöglicht eine Auswahl von mehreren Möglichkeiten -->
-                <div class="container">
-                    <label style="font-size: 20px;" for="gender">Geschlecht:</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Mann</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Frau</label>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Divers</label>
-                </div>
-                <h2 class="form_footer">...und starte sofort durch!</h2>
-                <!--Registrieren Button-->
-                <button class="button_signup" type="submit">Sign me Up!</button><br>
-                <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
-            </form>
-        </div>
+            <label style="font-size: 20px;" for="uni">Hochschule:
+                <select name="uni" size="1">
+                    <option>HAW Hamburg</option>
+                    <option>Universität Hamburg</option>
+                    <option>Universität Kiel</option>
+                    <option>FH Wedel</option>
+                    <option>TUHH Hamburg</option>
+                </select>
+            </label>
+            <!--ermöglicht eine Auswahl von mehreren Möglichkeiten -->
+            <div class="container">
+                <label style="font-size: 20px;" for="gender">Geschlecht:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Mann</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Frau</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Divers</label>
+            </div>
+            <h2 class="form_footer">...und starte sofort durch!</h2>
+            <!--Registrieren Button-->
+            <button class="button_signup" type="submit">Sign me Up!</button><br>
+            <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
+        </form>
+    </div>
 
-        <!--Error Anzeige falls etwas nicht übereinstimmt-->
-        <div style="color: red;">
-            <%=error%>
-        </div>
-
-        <br>
-    </main>
+    <!--Error Anzeige falls etwas nicht übereinstimmt-->
+    <div style="color: red;">
+        <%=error%>
+    </div>
 </body>
 
 </html>

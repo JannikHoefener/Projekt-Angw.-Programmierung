@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Hintergrundfarbe für die "Funktionen" - Seite*/
+/*Hintergrundbild für die LandingPage*/
 
 html {
     background-image: url("../MainBackground.jpg");
@@ -13,7 +13,6 @@ html {
     position: relative;
     color: black;
     background-size: cover;
-    background-color: #C2BAB6;
     background-attachment: fixed;
 }
 
@@ -22,6 +21,7 @@ body {
 }
 
 /*Header Klassen*/
+
 .header {
     width: 100%;
     text-align: center;
@@ -31,55 +31,85 @@ body {
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
-    /*Button "Funktion" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    justify-content: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 3%;
-    margin-right: 10%;
+    float: right;
+    margin: 10rem 14rem 0 0;
 }
-
-.headLineLinks{
-    display: inline;
-
-}
-li{
-    display: inline-block;
-    margin: 0 !important;
-    border-color: #707070;
-
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-    border-color: #707070;
-    padding-right: 15px;
-    cursor: pointer;
-}
-a:hover {
-    color: #000000;
-}
-
-/*.activeSite{  Aktive Seite farbig hinterlegen
-
-}*/
-
-
 
 .logo {
-    /*Logo "Uni-Collab'" auf der linken Seite*/
+    /*Logo auf der linken Seite*/
     float: left;
-    margin-left: 5%;
+    margin-left: 4%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
     color: rgb(255, 255, 255);
-    text-shadow:  2px  2px 2px black,
-                  2px -2px 2px black,
-                 -2px  2px 2px black,
-                 -2px -2px 2px black;
+    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+}
+
+.function_button {
+    /*Button "Funktion" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.function_button:hover {
+    color: #000000;
+}
+
+.aboutUs_button {
+    /*Button "About Us" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.aboutUs_button:hover {
+    color: #000000;
+}
+
+.impressum_button {
+    /*Button "Impressum" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-right: 1px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.impressum_button:hover {
+    color: #000000;
+}
+
+/*Slogan-Klasse unter dem Header "Weniger Stress, mehr Organisation"*/
+
+.slogan {
+    display: flex;
+    margin-top: 0%;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4.375rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgb(112, 112, 112);
 }
 
 /*Klassen für die Zentrierung*/
@@ -94,7 +124,6 @@ main {
     align-self: center;
 }
 
-
 .middle {
     /*hauptsächliche Zentrierung*/
     width: 100%;
@@ -104,16 +133,6 @@ main {
 }
 
 /*Registrier-Feld auf der linken Seite der .middle-Klasse*/
-
-.slogan {
-    display: flex;
-    margin-top: 0%;
-    font-family: 'Bungee Shade', cursive;
-    font-size: 4.375rem;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 0.4px;
-    -webkit-text-stroke-color: rgb(112, 112, 112);
-}
 
 .texte {
     height: 225px;
@@ -170,6 +189,11 @@ form {
     margin-top: 0%;
     margin-bottom: 0%;
     font-size: 36px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .form_footer {
@@ -219,4 +243,76 @@ input[type=password] {
     background-color: rgba(255, 255, 255, 0.582);
     padding: 10px 20px;
     margin: 2%;
+    /* 2 animations: shake, and glow red */
+    animation-name: shake, glow-red;
+    animation-duration: 0.7s, 0.35s;
+    animation-iteration-count: 1, 2;
+}
+
+.form_heading .popuptext {
+    visibility: hidden;
+    font-family:Helvetica;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+/* Popup arrow */
+
+.form_heading .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.form_heading .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%, 20%, 40%, 60%, 80% {
+        transform: translateX(8px);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes glow-red {
+    50% {
+        border-color: indianred;
+    }
 }
