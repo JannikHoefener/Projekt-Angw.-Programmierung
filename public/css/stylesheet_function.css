@@ -5,12 +5,11 @@
 }
 
 /*Hintergrundfarbe für die "Funktionen" - Seite*/
-
 html {
+    /*background-image: url();*/
     height: 100%;
     background-position: center;
     position: relative;
-    color: black;
     background-size: cover;
     background-color: #C2BAB6;
     background-attachment: fixed;
@@ -21,7 +20,6 @@ body {
 }
 
 /*Header Klassen*/
-
 .header {
     width: 100%;
     text-align: center;
@@ -38,15 +36,11 @@ body {
 .logo {
     /*Logo auf der linken Seite*/
     float: left;
-    margin-left: 9%;
-    margin-bottom: 0%;
+    margin-left: 4%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
     color: rgb(255, 255, 255);
-    text-shadow:  2px  2px 2px black,
-                  2px -2px 2px black,
-                 -2px  2px 2px black,
-                 -2px -2px 2px black;
+    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
 }
 
 .function_button {
@@ -63,10 +57,10 @@ body {
     padding-right: 15px;
     cursor: pointer;
 }
+
 .function_button:hover {
     color: #000000;
 }
-
 
 .aboutUs_button {
     /*Button "About Us" auf der rechten Seite*/
@@ -82,6 +76,7 @@ body {
     padding-right: 15px;
     cursor: pointer;
 }
+
 .aboutUs_button:hover {
     color: #000000;
 }
@@ -98,6 +93,7 @@ body {
     padding: 5px;
     cursor: pointer;
 }
+
 .impressum_button:hover {
     color: #000000;
 }

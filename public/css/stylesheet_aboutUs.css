@@ -1,45 +1,46 @@
+/*Gesamte EJS*/
+
 * {
     box-sizing:content-box;
-    text-align:center;
-    margin-left: auto; 
-    margin-right: auto;
-    /*display: flex;*/
-    /*justify-content: center;*/
 }
 
+/*Hintergrundfarbe für die "AboutUs" - Seite*/
 html {
-    background-color: #D6CFC8;
+    /*background-image: url();*/
+    height: 100%;
     background-position: center;
-    color: black;
+    position: relative;
     background-size: cover;
+    background-color: #D6CFC8;
     background-attachment: fixed;
 }
 
 body {
-    text-align:center;
+    height: 99%;
 }
 
+/*Header Klassen*/
 .header {
-    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
 }
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
+    float: right;
     margin: 10rem 14rem 0 0;
 }
 
 .logo {
     /*Logo auf der linken Seite*/
     float: left;
-    margin-left: 9%;
-    margin-bottom: 0%;
+    margin-left: 4%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
     color: rgb(255, 255, 255);
-    text-shadow:  2px  2px 2px black,
-                  2px -2px 2px black,
-                 -2px  2px 2px black,
-                 -2px -2px 2px black;
+    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
 }
 
 .function_button {
@@ -97,6 +98,27 @@ body {
     color: #000000;
 }
 
+/*Klassen für die Zentrierung*/
+
+main {
+    /*"Wrapper"-Klasse*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.middle {
+    /*hauptsächliche Zentrierung*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .headline {
     font-family: 'Bungee', cursive;
     font-size: 7rem;
@@ -105,6 +127,9 @@ body {
     -webkit-text-stroke-color: rgb(112, 112, 112);
     margin-bottom: -25px;
     margin-top: 0%;
+    text-align:center;
+    margin-left: auto; 
+    margin-right: auto;
 }
 .headline2 {
     font-family: 'Bungee', cursive;
@@ -114,25 +139,37 @@ body {
     -webkit-text-stroke-color: rgb(112, 112, 112);
     margin-top: 50px;
     margin-bottom: 0px;
+    text-align:center;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
-#aboutUsText {
+.aboutUsText {
     color: rgb(255, 255, 255);
     max-width: 93.75rem;
     font-size: 2.5rem;
-    text-align:justify;
     margin-bottom: 7rem;
+    text-align:center;
 }
-
+.Magicmaker{
+    max-width: fit-content;
+    margin-left: auto; 
+    margin-right: auto;
+}
 hr{
     height: 2px;
     background-color: black;
+    margin-left: auto; 
+    margin-right: auto;
     } 
 
 .gallery {
     margin-bottom: 4rem;
     border: 1px solid #ccc;
     display: flex;
+    text-align:center;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .roundpic {
