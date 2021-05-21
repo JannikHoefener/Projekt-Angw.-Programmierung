@@ -45,10 +45,21 @@ li{
     border: 10px solid rgba(170, 170, 170, 0);
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 34px;
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    cursor: pointer;
 }
 .desk{
-    margin-left: 35%;
     order: 2;
     height: 100%;
+    margin-left: 35%;
+}
+
+.welcomeMSG{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    cursor: pointer;
 }
