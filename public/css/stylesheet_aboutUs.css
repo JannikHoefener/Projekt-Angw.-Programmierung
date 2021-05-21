@@ -15,6 +15,11 @@ html {
     background-attachment: fixed;
 }
 
+body {
+    height: 99%;
+    margin:auto;
+}
+
 /*Header Klassen*/
 .header {
     width: 100%;
