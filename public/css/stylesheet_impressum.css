@@ -30,8 +30,7 @@ body {
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
-    margin: 10rem 14rem;
-    margin-right: 15rem;
+    margin: 10rem 0 0 0;
 }
 
 .logo {
@@ -123,11 +122,11 @@ main {
 /*Linke Seite der Website mit dem Bild*/
 
 .reg_left {
+    z-index: -1;
     background-image: url("../ImpressumCut.png");
     height: 100%;
     width: 60.375rem;
     position: absolute;
-    display: flex;
     float: left;
     flex-direction: column;
     background-size: cover;
