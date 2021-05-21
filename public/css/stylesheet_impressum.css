@@ -30,7 +30,8 @@ body {
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
-    margin: 10rem 0 0 0;
+    float: right;
+    margin: 10rem 10rem 0 0;
 }
 
 .logo {

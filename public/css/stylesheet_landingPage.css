@@ -17,7 +17,7 @@ html {
 
 body {
     height: 99%;
-
+    margin: auto;
 }
 
 /*Header Klassen*/
@@ -30,8 +30,8 @@ body {
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
-    margin: 10rem 14rem;
-    margin-right: 15rem;
+    float: right;
+    margin: 10rem 10rem 0 0;
 }
 
 .logo {
