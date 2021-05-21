@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    background-image: url("../MainBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.bodyA{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.192) 35%,rgba(255, 0, 0, 0.315) 35%);
+    height: 100%;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navbar{
+    display: flex;
+    width: 35%;
+    background-color: #f1f1f1ba;
+    position: fixed;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navCon{ 
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.desk{
+    order: 2;
+    height: 100%;
+    width: 65%;
+}
