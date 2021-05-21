@@ -22,24 +22,33 @@ main{
 }
 
 .navbar{
+    order: 1;
     display: flex;
     width: 35%;
-    background-color: #f1f1f1ba;
+    background-color: #f1f1f1ba;    
     position: fixed;
     height: 100%;
     justify-content: space-around;
     align-items: center;
 }
 .navCon{ 
-    display: flex;
+    display: block;
     list-style-type: none;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
  
 }
+
+li{
+    padding: 5px 10px;
+    border: 10px solid rgba(170, 170, 170, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 34px;
+}
 .desk{
+    margin-left: 35%;
     order: 2;
     height: 100%;
-    width: 65%;
 }
