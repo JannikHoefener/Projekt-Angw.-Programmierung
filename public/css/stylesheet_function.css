@@ -17,6 +17,7 @@ html {
 
 body {
     height: 99%;
+    margin:auto;
 }
 
 /*Header Klassen*/
@@ -29,8 +30,8 @@ body {
 
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
-    float: right;
-    margin: 10rem 14rem 0 0;
+    margin: 10rem 14rem;
+    margin-right: 15rem;
 }
 
 .logo {
@@ -112,7 +113,7 @@ main {
 
 .middle {
     /*hauptsächliche Zentrierung*/
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -171,8 +172,8 @@ main {
     margin: 2%;
 }
 
+/*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
 .button_back {
-    /*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
     font-family: 'Bungee', cursive;
     height: 3.75rem;
     width: 15rem;
@@ -183,9 +184,8 @@ main {
     border-color: #707070;
     border-radius: 25px;
     cursor: pointer;
-    margin-top: 4rem;
 }
 .button_back:hover {
-    color: #4D5258;
-    background-color: #EFECE9;
+    color: #000000;
+    background-color: #eceb88;
   }
