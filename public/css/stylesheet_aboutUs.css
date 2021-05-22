@@ -15,6 +15,11 @@ html {
     background-attachment: fixed;
 }
 
+body {
+    height: 99%;
+    margin:auto;
+}
+
 /*Header Klassen*/
 .header {
     width: 100%;
@@ -26,7 +31,7 @@ html {
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
     float: right;
-    margin: 10rem 14rem 0 0;
+    margin: 10rem 10rem 0 0;
 }
 
 .logo {

@@ -10,71 +10,38 @@ html {
     height: 100%;
     background-position: center;
     position: relative;
-    color: black;
     background-size: cover;
-    background-color: #C2BAB6;
+    background-color: #D6CFC8;
     background-attachment: fixed;
 }
 
 body {
     height: 99%;
-    margin-left: 0%;
-    margin-top: 0%;
+    margin:auto;
 }
 
-/*Klassen für die Zentrierung*/
-
-main {
-    /*"Wrapper"-Klasse*/
-    height: 100%;
-    width: 100%;
+/*Header Klassen*/
+.header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
+    text-align: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
 }
 
-/*Linke Seite der Website mit dem Bild*/
-
-.reg_left {
-    background-image: url("../Register.jpg");
-    height: 100%;
-    width: 40%;
-    position: absolute;
-    display: flex;
-    float: left;
-    flex-direction: column;
-    background-size: cover;
+.header_buttons {
+    /*Rechte Seite des Headers mit den Buttons*/
+    float: right;
+    margin: 10rem 10rem 0 0;
 }
 
 .logo {
     /*Logo auf der linken Seite*/
     float: left;
-    margin-top: -3%;
-    margin-left: 9%;
+    margin-left: 4%;
     font-family: 'Bungee', cursive;
     font-size: 6.75rem;
     color: rgb(255, 255, 255);
-    text-shadow:  2px  2px 2px black,
-                  2px -2px 2px black,
-                 -2px  2px 2px black,
-                 -2px -2px 2px black;
-}
-
-/*Rechte Seite der Website*/
-
-.reg_right {
-    display: flex;
-    float: right;
-    height: 100%;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header_buttons {
-    /*Wrapper-Klasse für die Buttons auf der rechten Seite*/
-    margin-top: 5rem;
+    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
 }
 
 .function_button {
@@ -91,9 +58,10 @@ main {
     padding-right: 15px;
     cursor: pointer;
 }
+
 .function_button:hover {
     color: #000000;
-  }
+}
 
 .aboutUs_button {
     /*Button "About Us" auf der rechten Seite*/
@@ -109,9 +77,10 @@ main {
     padding-right: 15px;
     cursor: pointer;
 }
+
 .aboutUs_button:hover {
     color: #000000;
-  }
+}
 
 .impressum_button {
     /*Button "Impressum" auf der rechten Seite*/
@@ -125,13 +94,50 @@ main {
     padding: 5px;
     cursor: pointer;
 }
+
 .impressum_button:hover {
     color: #000000;
-  }
+}
+
+/*Klassen für die Zentrierung*/
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle {
+    /*hauptsächliche Zentrierung*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Linke Seite der Website mit dem Bild*/
+
+.reg_left {
+    display: flex;
+    z-index: -1;
+    background-image: url("../Register.jpg");
+    height: 100%;
+    width: 60.375rem;
+    position: absolute;
+    background-size: cover;
+}
+
+.reg_right {
+ margin-right: 21%;
+ margin-top: -5%;
+}
 
 /*Registerformular - Styling auf der rechten Seite der Website*/
 
 form {
+    float: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +145,6 @@ form {
     letter-spacing: 0.07rem;
     font-family: 'Bungee', cursive;
     color: white;
-    margin-top: 5rem;
 }
 
 .form_heading {

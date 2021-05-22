@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Hintergrundfarbe für die "AboutUs" - Seite*/
+/*Hintergrundfarbe für die "Impressum" - Seite*/
 html {
     /*background-image: url();*/
     height: 100%;
@@ -17,6 +17,7 @@ html {
 
 body {
     height: 99%;
+    margin:auto;
 }
 
 /*Header Klassen*/
@@ -30,7 +31,7 @@ body {
 .header_buttons {
     /*Rechte Seite des Headers mit den Buttons*/
     float: right;
-    margin: 10rem 14rem 0 0;
+    margin: 10rem 10rem 0 0;
 }
 
 .logo {
@@ -122,11 +123,11 @@ main {
 /*Linke Seite der Website mit dem Bild*/
 
 .reg_left {
+    z-index: -1;
     background-image: url("../ImpressumCut.png");
     height: 100%;
     width: 60.375rem;
     position: absolute;
-    display: flex;
     float: left;
     flex-direction: column;
     background-size: cover;
