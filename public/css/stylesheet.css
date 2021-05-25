@@ -133,24 +133,6 @@ main {
 label {
     font-weight: 700;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.07rem;
-    height: 25rem;
-    width: 25rem;
-    font-family: 'Bungee', cursive;
-    color: white;
-    /*Umrandung Schrift
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: black;*/
-    border: 1px solid #707070;
-    border-radius: 60px;
-    background-color: #D6CFC8;
-    margin-left: 5%
-}
 .form_heading {
     margin-top: 0%;
     margin-bottom: 0%;

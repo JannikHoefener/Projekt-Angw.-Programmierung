@@ -1,120 +1,17 @@
-/*Gesamte EJS*/
-
-* {
-    box-sizing: border-box;
-}
+@import "stylesheet.css";
 
 /*Hintergrundfarbe für die "Register" - Seite*/
 
 html {
-    height: 100%;
-    background-position: center;
-    position: relative;
-    background-size: cover;
+    background-image: none;
     background-color: #D6CFC8;
-    background-attachment: fixed;
-}
-
-body {
-    height: 99%;
-    margin:auto;
-}
-
-/*Header Klassen*/
-.header {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    color: rgb(0, 0, 0);
-}
-
-.header_buttons {
-    /*Rechte Seite des Headers mit den Buttons*/
-    float: right;
-    margin: 10rem 10rem 0 0;
-}
-
-.logo {
-    /*Logo auf der linken Seite*/
-    float: left;
-    margin-left: 4%;
-    font-family: 'Bungee', cursive;
-    font-size: 6.75rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
-}
-
-.function_button {
-    /*Button "Funktion" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    padding-right: 15px;
-    cursor: pointer;
-}
-
-.function_button:hover {
-    color: #000000;
-}
-
-.aboutUs_button {
-    /*Button "About Us" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    padding-right: 15px;
-    cursor: pointer;
-}
-
-.aboutUs_button:hover {
-    color: #000000;
-}
-
-.impressum_button {
-    /*Button "Impressum" auf der rechten Seite*/
-    font-family: 'Bungee', cursive;
-    font-size: 25px;
-    background-color: rgba(245, 222, 179, 0);
-    color: #ffffff;
-    border-color: #707070;
-    border-right: 1px;
-    border: 0;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.impressum_button:hover {
-    color: #000000;
 }
 
 /*Klassen für die Zentrierung*/
 
 main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.middle {
-    /*hauptsächliche Zentrierung*/
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-items: unset;
+    align-self: unset;
 }
 
 /*Linke Seite der Website mit dem Bild*/
@@ -225,22 +122,4 @@ select {
 .button_signup:hover {
     color: #ffffff;
     background-color: #5E5E59;
-  }
-
-.button_back {
-    /*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
-    font-family: 'Bungee', cursive;
-    height: 3.75rem;
-    width: 15rem;
-    font-size: 21px;
-    color: #EFECE9;
-    background-color: #5E5E59;
-    border: solid;
-    border-color: #707070;
-    border-radius: 25px;
-    cursor: pointer;
-}
-.button_back:hover {
-    color: #4D5258;
-    background-color: #EFECE9;
   }
