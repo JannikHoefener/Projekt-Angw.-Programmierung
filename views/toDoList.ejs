@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet_todo.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <h1 class="headline">Deine Aufgaben Liste </h1>
+
+    <div class="howto">
+        <h3>Funktionsweise:</h3>
+        <ol>
+            <li>Aufgabe erstellen</li> 
+            <li>einfacher Klick: Aufgabe als erledigt markieren</li>
+            <li>doppel Klick: aufgabe löschen</li>
+        </ol>
+        <hr>
+    </div>
+    
+    <div class = "container"> 
+        <h2>neue Aufgaben erstellen </h2>
+        <input id="inputField" type="text" placeholder="neue Aufgabe eingeben"> 
+        <button id="addToDo">+</button>
+    </div>
+
+    <h2>aktuelle Aufgaben</h2>
+    <div class="toDos" id="toDoContainer">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -59,6 +59,9 @@ app.get("/impressum", function (req, res) {
 app.get("/aboutUs", function (req, res) {
     res.render("aboutUsPage", {});
 })
+app.get("/toDoList", function (req, res) {
+    res.render("toDoList", {});
+})
 app.get("/userStart", function (req, res) {
     if (req.session.username) {
         res.render("userStart", {username: req.session.username});

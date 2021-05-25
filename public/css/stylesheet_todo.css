@@ -1,0 +1,90 @@
+html, body {
+    width: 75%;
+    margin:  0 auto;
+    font-family: 'Bungee', cursive;
+    background-color: #D6CFC8;
+}
+
+.headline {
+    font-size: 3.25rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: rgb(112, 112, 112);
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 500%;
+}
+
+h2 {
+    margin-bottom: -5px;
+    color: white;
+}
+
+#inputField {
+    width: 800px;
+    height: 45px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    vertical-align: middle;
+    font-family: 'Bungee';
+    color: black;
+    padding-left: 8px;
+}
+
+#addToDo {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    vertical-align: middle;
+    font-size: 35px;
+    margin-left: 3px;
+}
+
+.toDos {
+    font-size: 20px;
+}
+
+.paragraph-styling {
+    width: 800px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+
+
+
+
+h3 {
+    margin-top: -10px;
+    margin-bottom: -5px;
+    color: white;
+}
+
+ol {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    padding-bottom: 14px;
+    padding-top: 5px;
+    color: grey;
+    text-indent: 0.25em;
+}
+li {
+    margin-bottom: -9px;
+}
+
+hr {
+    margin-top: 10px;
+    color: rgb(155, 155, 155);
+}
