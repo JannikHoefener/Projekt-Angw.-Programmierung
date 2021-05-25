@@ -1,0 +1,191 @@
+/*Gesamte EJS*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Hintergrundfarbe für die "Funktionen" - Seite*/
+html {
+    /*background-image: url();*/
+    height: 100%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    background-color: #C2BAB6;
+    background-attachment: fixed;
+}
+
+body {
+    height: 99%;
+    margin:auto;
+}
+
+/*Header Klassen*/
+.header {
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.header_buttons {
+    /*Rechte Seite des Headers mit den Buttons*/
+    float: right;
+    margin: 10rem 10rem 0 0;
+}
+
+.logo {
+    /*Logo auf der linken Seite*/
+    float: left;
+    margin-left: 4%;
+    font-family: 'Bungee', cursive;
+    font-size: 6.75rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
+}
+
+.function_button {
+    /*Button "Funktion" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.function_button:hover {
+    color: #000000;
+}
+
+.aboutUs_button {
+    /*Button "About Us" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.aboutUs_button:hover {
+    color: #000000;
+}
+
+.impressum_button {
+    /*Button "Impressum" auf der rechten Seite*/
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    background-color: rgba(245, 222, 179, 0);
+    color: #ffffff;
+    border-color: #707070;
+    border-right: 1px;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.impressum_button:hover {
+    color: #000000;
+}
+
+/*Klassen für die Zentrierung*/
+
+main {
+    /*"Wrapper"-Klasse*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.middle {
+    /*hauptsächliche Zentrierung*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Einzelne rows für die jeweiligen Funktionen*/
+
+.function_heading {
+    /*Überschrift über der jewiligen Funktion*/
+    font-size: 3.75rem;
+    color: #5E5E59;
+}
+
+.calendar_row {
+    /*Kalender - Row*/
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-family: 'Bungee', cursive;
+    font-size: 21px;
+    color: #EFECE9;
+    margin: 2%;
+}
+
+.todo_row {
+    /*ToDo - Row*/
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-family: 'Bungee', cursive;
+    font-size: 21px;
+    color: #EFECE9;
+    margin: 2%;
+}
+
+.group_row {
+    /*Gruppen - Row*/
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-family: 'Bungee', cursive;
+    font-size: 21px;
+    color: #EFECE9;
+    margin: 2%;
+}
+
+.doc_row {
+    /*Dokumenten - Row*/
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-family: 'Bungee', cursive;
+    font-size: 21px;
+    color: #EFECE9;
+    margin: 2%;
+}
+
+/*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
+.button_back {
+    font-family: 'Bungee', cursive;
+    height: 3.75rem;
+    width: 15rem;
+    font-size: 21px;
+    color: #EFECE9;
+    background-color: #5E5E59;
+    border: solid;
+    border-color: #707070;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.button_back:hover {
+    color: #000000;
+    background-color: #eceb88;
+  }

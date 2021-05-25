@@ -1,6 +1,7 @@
 //Initialisierung Express
 const express = require("express");
 const app = express();
+
 app.use(express.static(__dirname + "/public"));
 
 //Initialisierung body-parser
@@ -30,9 +31,12 @@ const session = require('express-session');
 app.use(session({
     secret: 'example',
     saveUninitialized: false,
-    resave: false,
+    resave: true,
     cookie: { maxAge: 60 * 60 * 1000 }
 }));
+
+//Initialisierung bcrypt
+const bcrypt = require('bcrypt');
 
 //Server starten
 app.listen(3000, function () {
@@ -43,7 +47,6 @@ app.listen(3000, function () {
 app.get("/landingPage", function (req, res) {
     res.render("landingPage", { error: "" });
 })
-
 app.get("/register", function (req, res) {
     res.render("register", { error: "" });
 })
@@ -56,29 +59,41 @@ app.get("/impressum", function (req, res) {
 app.get("/aboutUs", function (req, res) {
     res.render("aboutUsPage", {});
 })
+app.get("/toDoList", function (req, res) {
+    res.render("toDoList", {});
+})
+app.get("/userStart", function (req, res) {
+    if (req.session.username) {
+        res.render("userStart", {username: req.session.username});
+    } else {
+        res.redirect("landingPage")
+    }
+    
+})
 
 //Login Function
 app.post("/loginCheck", function (req, res) {
     const param_username = req.body.username;
     const param_password = req.body.password;
-    const sql_login = `SELECT * FROM loginlist WHERE username='${param_username}' AND password='${param_password}'`
+    const sql_login = `SELECT * FROM loginlist WHERE username='${param_username}'`
 
     db.all(sql_login,
         function (err, rows) {
-            if (rows.length != 0) {
+            if (rows.length != 0 && bcrypt.compareSync(param_password, rows[0].password)) {
+                req.session.username = param_username;
                 res.render("userStart", { username: param_username });
             } else {
                 res.render("landingPage", { error: "Benutzername und/oder Passwort falsch oder nicht vergeben!" })
             }
         }
     );
-
 });
 
 //Register
 app.post("/registerdb", function (req, res) {
     const username = req.body.username;
     const password = req.body.password;
+    const hash = bcrypt.hashSync(password, 10);
     const lastname = req.body.lastname;
     const firstname = req.body.firstname;
     const email = req.body.email;
@@ -92,12 +107,12 @@ app.post("/registerdb", function (req, res) {
             res.render("register", { error: "Passwort Wiederholung ist falsch!" })
         } else {
             db.run(
-                `INSERT INTO loginlist (username, password) VALUES ("${username}", "${password}")`,
+                `INSERT INTO loginlist (username, password) VALUES ("${username}", "${hash}")`,
                 function () {
                     console.log("Wurde gespeichert");
                 });
             db.run(
-                `INSERT INTO registerlist (username, firstname, lastname, password, email) VALUES ("${username}", "${firstname}", "${lastname}", "${password}", "${email}")`,
+                `INSERT INTO registerlist (username, firstname, lastname, password, email) VALUES ("${username}", "${firstname}", "${lastname}", "${hash}", "${email}")`,
                 function (err) {
                     res.render("userStart", { username: username });
                 }
