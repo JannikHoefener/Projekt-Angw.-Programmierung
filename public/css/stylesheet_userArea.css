@@ -51,6 +51,12 @@
 .menu-items:nth-child(2) {
     display: block;
     flex-basis: auto;
+    align-self: center;
+    order: 1;
+}
+.menu-items:nth-child(3) {
+    display: block;
+    flex-basis: auto;
     align-self: auto;
     order: 1;
 }
@@ -79,7 +85,6 @@ ul {
     width: 174px; 
     height: 174px;
     background-size: cover;
-    align-self: center;
 }
 
 a{
