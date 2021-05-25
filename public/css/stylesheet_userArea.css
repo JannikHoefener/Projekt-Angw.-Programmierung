@@ -1,6 +1,6 @@
 @import "stylesheet_main.css";
 .logo{
-    font-size: 50px;
+    font-size: 2vw;
     text-align: center;
     float: none;
 }
@@ -75,22 +75,26 @@ ul {
 }
 
 .navButtons{
-    margin: 5% 0% 5% 25%;
+    margin: 5% 0% 3% 25%;
     background-color: #bf9f70d7;
-    width: 333px;
-    height: 52px;
+    width: 12vw;
+    height: 2vw;
 }
 
 .profilPic{
     background-image: url(../JohnDoe.png);
-    width: 174px; 
-    height: 174px;
+    width: 7vw; 
+    height: 7vw;
     background-size: cover;
 }
 
 a{
   text-decoration: none;
   color: black;
+}
+
+li{
+    font-size: 0.85vw;
 }
 
 /*3 Flex Area */
