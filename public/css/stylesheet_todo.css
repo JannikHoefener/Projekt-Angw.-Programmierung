@@ -1,8 +1,7 @@
+@import "stylesheet_main.css";
+@import "stylsheet_userArea.css";
 html, body {
     width: 75%;
-    margin:  0 auto;
-    font-family: 'Bungee', cursive;
-    background-color: #D6CFC8;
 }
 
 .headline {

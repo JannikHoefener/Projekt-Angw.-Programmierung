@@ -9,6 +9,7 @@ html {
     color: black;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Bungee', cursive;
 }
 body {
     height: 99%;

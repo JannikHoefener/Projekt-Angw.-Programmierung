@@ -1,4 +1,4 @@
-@import "stylesheet.css";
+@import "stylesheet_main.css";
 
 body{
     margin: auto;
@@ -19,7 +19,7 @@ main{
 .navbar{
     order: 1;
     display: flex;
-    width: 35%;
+    width: 25%;
     background-color: #f1f1f1ba;    
     position: fixed;
     height: 100%;
