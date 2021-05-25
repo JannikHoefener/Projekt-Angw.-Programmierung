@@ -62,6 +62,9 @@ app.get("/aboutUs", function (req, res) {
 app.get("/toDoList", function (req, res) {
     res.render("toDoList", {});
 })
+app.get("/profil", function (req, res) {
+    res.render("profil", {});
+})
 app.get("/userStart", function (req, res) {
     if (req.session.username) {
         res.render("userStart", {username: req.session.username});
