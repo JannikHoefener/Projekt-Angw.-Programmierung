@@ -1,16 +1,10 @@
-@import url(stylesheet.css);
-
-* {
-    box-sizing: border-box;
-}
+@import "stylesheet.css";
 
 body{
     margin: auto;
-    background-image: url("../MainBackground.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-   
 }
 .bodyA{
     background: linear-gradient(to right, rgba(255, 255, 255, 0.192) 35%,rgba(255, 0, 0, 0.315) 35%);
@@ -19,8 +13,7 @@ body{
 }
 main{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
 
 .navbar{
