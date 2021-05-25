@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,45 +14,72 @@
 </head>
 
 <body>
-    <h1 class="headline">Deine Aufgaben Liste </h1>
+    <div class="flex-container">
+        <div class="navbar">
+            <div class="menu_container">
+                <div class="menu-items">
+                    <h1 class="logo">Uni - Collab'</h1>
+                </div>
+                <div class="menu-items">
+                    <ul class="navCon">
+                        <li>Profil-Einstellungen</li>
+                        <li><a href="userStart">Startseite</a></li>
+                        <li><a href="toDoList">To-Do</a></li>
+                        <li><a href="calender">Kalender</a></li>
+                        <li><a href="documents">Dokumente</a></li>
+                        <li><a href="groups">Gruppen</a></li>
+                        <li><a href="javascript:history.back()">zurück</a></li>
+                        <li><a href="landingPage">Abmelden</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <div class="howto">
-        <h3>Funktionsweise:</h3>
-        <ol>
-            <li>Aufgabe erstellen</li> 
-            <li>einfacher Klick: Aufgabe als erledigt markieren</li>
-            <li>doppel Klick: aufgabe löschen</li>
-        </ol>
-        <hr>
-    </div>
-    
-    <div class = "container"> 
-        <h2>neue Aufgaben erstellen </h2>
-        <input id="inputField" type="text" placeholder="neue Aufgabe eingeben"> 
-        <button id="addToDo">+</button>
-    </div>
+        </div>
 
-    <h2>aktuelle Aufgaben</h2>
-    <div class="toDos" id="toDoContainer">
-    </div>
-    <script> let addToDoButton = document.getElementById('addToDo');
-        let toDoContainer = document.getElementById('toDoContainer');
-        let inputField = document.getElementById('inputField');
-        
-        addToDoButton.addEventListener('click', function(){
-            var paragraph = document.createElement('p');
-            paragraph.classList.add('paragraph-styling')
-            paragraph.innerText = inputField.value;
-            toDoContainer.appendChild(paragraph);
-            inputField.value = "";
-            paragraph.addEventListener('click', function(){
-                paragraph.style.textDecoration = "line-through";
-                paragraph.style.color = "#5a534c";
-                paragraph.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
-            });
-            paragraph.addEventListener('dblclick', function(){
-                toDoContainer.removeChild(paragraph);
-            });
-        }); </script>
+        <div class="overview">
+                <h1 class="headline">Deine Aufgaben Liste </h1>
+
+                <div class="howto">
+                    <h2 class="headline2">Funktionsweise:</h2>
+                    <ol class="explaineList">
+                        <li class="steps">Aufgabe erstellen</li>
+                        <li class="steps">einfacher Klick: Aufgabe als erledigt markieren</li>
+                        <li class="steps">doppel Klick: aufgabe löschen</li>
+                    </ol>
+                    <hr>
+                </div>
+
+                <div class="container">
+                    <h3 class="headline3">neue Aufgaben erstellen </h3>
+                    <input id="inputField" type="text" placeholder="neue Aufgabe eingeben">
+                    <button id="addToDo">+</button>
+                </div>
+
+                <h3 class="headline3">aktuelle Aufgaben</h3>
+                <div class="toDos" id="toDoContainer">
+                </div>
+            </div>
+        </div>  
+    </div>       
+            <script> let addToDoButton = document.getElementById('addToDo');
+                let toDoContainer = document.getElementById('toDoContainer');
+                let inputField = document.getElementById('inputField');
+
+                addToDoButton.addEventListener('click', function () {
+                    var paragraph = document.createElement('p');
+                    paragraph.classList.add('paragraph-styling')
+                    paragraph.innerText = inputField.value;
+                    toDoContainer.appendChild(paragraph);
+                    inputField.value = "";
+                    paragraph.addEventListener('click', function () {
+                        paragraph.style.textDecoration = "line-through";
+                        paragraph.style.color = "#5a534c";
+                        paragraph.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+                    });
+                    paragraph.addEventListener('dblclick', function () {
+                        toDoContainer.removeChild(paragraph);
+                    });
+                });</script>
 </body>
+
 </html>

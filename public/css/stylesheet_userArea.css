@@ -1,11 +1,118 @@
 @import "stylesheet_main.css";
-
-body{
-    margin: auto;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+.logo{
+    font-size: 50px;
+    text-align: center;
+    float: none;
 }
+/*Main FlexBox*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+  
+.navbar:nth-child(1) {
+    display: block;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 25%;
+}
+  
+.overview:nth-child(2) {
+    display: block;
+    flex-basis: auto;
+    align-self: auto;
+    order: 1;
+    margin: 0rem 3rem 0rem 3rem;
+}
+/*2nd Flex Area*/
+.menu_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: normal;
+    background-color: #f1f1f1ba;
+    height: 100vh;
+}
+  
+.menu-items:nth-child(1) {
+    display: block;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+.menu-items:nth-child(2) {
+    display: block;
+    flex-basis: auto;
+    align-self: auto;
+    order: 1;
+}
+.navCon{ 
+    display: block;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column; 
+}
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navButtons{
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #D9CEC6;
+    width: 333px;
+    height: 52px;
+    border-spacing: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Alter Code*/
+/*tuned off
 .bodyA{
     background: linear-gradient(to right, rgba(255, 255, 255, 0.192) 35%,rgba(255, 0, 0, 0.315) 35%);
     height: 100%;

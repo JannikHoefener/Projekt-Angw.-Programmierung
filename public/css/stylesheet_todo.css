@@ -1,8 +1,5 @@
 @import "stylesheet_main.css";
-@import "stylsheet_userArea.css";
-html, body {
-    width: 75%;
-}
+@import "stylesheet_userArea.css";
 
 .headline {
     font-size: 3.25rem;
@@ -12,15 +9,16 @@ html, body {
     margin-top: -15px;
     margin-bottom: 10px;
 }
-
-.container {
-    width: 500%;
-}
-
-h2 {
+.headline2 {
+    margin-top: -10px;
     margin-bottom: -5px;
     color: white;
 }
+.headline3 {
+    margin-bottom: -5px;
+    color: white;
+}
+
 
 #inputField {
     width: 800px;
@@ -61,16 +59,7 @@ h2 {
     padding-left: 8px;
 }
 
-
-
-
-h3 {
-    margin-top: -10px;
-    margin-bottom: -5px;
-    color: white;
-}
-
-ol {
+.explaineList {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0;
@@ -79,8 +68,15 @@ ol {
     color: grey;
     text-indent: 0.25em;
 }
-li {
+.steps {
     margin-bottom: -9px;
+    border: none;
+    font-size: 25px;
+    margin: none;
+    margin-bottom: none;
+    width: none;
+    height: none;
+    border-spacing: none;
 }
 
 hr {

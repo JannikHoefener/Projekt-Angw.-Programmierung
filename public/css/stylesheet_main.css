@@ -10,6 +10,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Bungee', cursive;
+    display: block;
 }
 body {
     height: 99%;
@@ -115,9 +116,13 @@ main {
 /*Schrift*/
 .logo {
     /*Logo auf der linken Seite*/
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    font-weight: unset;
     float: left;
     margin-left: 4%;
-    font-family: 'Bungee', cursive;
     font-size: 6.75rem;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black, -2px -2px 2px black;
@@ -133,6 +138,14 @@ main {
 }
 label {
     font-weight: 700;
+}
+li{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    cursor: auto;
 }
 .form_heading {
     margin-top: 0%;
@@ -151,6 +164,3 @@ label {
     word-wrap: break-word;
     hyphens: auto;
 }*/
-/*Input Styling Login*/
-
-/*Flex Shrink??? Zum schrumpfen, angucken*/
