@@ -68,16 +68,23 @@ ul {
 }
 
 .navButtons{
-    margin: auto;
-    margin-bottom: 10px;
-    background-color: #D9CEC6;
+    margin: 5% 0% 5% 25%;
+    background-color: #bf9f70d7;
     width: 333px;
     height: 52px;
-    border-spacing: 10px;
+}
+
+.profilPic{
+    background-image: url(../JohnDoe.png);
+    width: 174px; 
+    height: 174px;
+    background-size: cover;
+    align-self: center;
 }
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 
