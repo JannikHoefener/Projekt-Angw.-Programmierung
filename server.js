@@ -59,20 +59,23 @@ app.get("/impressum", function (req, res) {
 app.get("/aboutUs", function (req, res) {
     res.render("aboutUsPage", {});
 })
-app.get("/toDoList", function (req, res) {
-    res.render("toDoList", {});
-})
 app.get("/profil", function (req, res) {
     res.render("profil", {});
 })
+app.get("/toDoList", function (req, res) {
+    res.render("userView_toDoList", {});
+})
 app.get("/documents", function (req, res) {
-    res.render("documents", {});
+    res.render("userView_documents", {});
+})
+app.get("/documents_2", function (req, res) {
+    res.render("userView_documents_2", {});
 })
 app.get("/groups", function (req, res) {
-    res.render("groups", {});
+    res.render("userView_groups", {});
 })
 app.get("/calendar", function (req, res) {
-    res.render("calendar", {});
+    res.render("userView_calendar", {});
 })
 app.get("/userStart", function (req, res) {
     if (req.session.username) {
