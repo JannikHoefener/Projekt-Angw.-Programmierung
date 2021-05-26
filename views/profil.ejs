@@ -40,48 +40,55 @@
             </div>
         </div>
         <div class="overview">
-            <form class="porfileChanges">
-                <div class="profileInfos">
+            <form class="overview_grid">
+                <div class="overview_items">
                     <h3>Profil Infos:</h3>
-                    <a>Vorname:</a><input type="text" name="firstname"><br>
-                    <a>Nachname:</a><input type="text" name="lastname"><br>
-                    <a>Benutzername:</a><input type="text" name="usernameChange"><br>
-                    <button class="button_change" type="change">Ändern</button>
+
+                    <a class="profilBox">Vorname:<input type="text" name="firstname">
+                    Nachname:<input type="text" name="lastname">
+                    Benutzername:</a><input type="text" name="usernameChange">
+                    <button class="navButtons3" type="change">Ändern</button>
+
                 </div>
-                <div class="pwChange">
+                <div class="overview_items">
                     <h3>Password ändern:</h3>
-                    <a>Password:</a><input type="password" name="passwordChange"><br>
-                    <a>Password wiederholen:</a><input type="password" name="passwordrepeatChange"><br>
-                    <button class="button_change" type="change">Ändern</button>
+                    <a class="profilBox">Password:</a><input type="password" name="passwordChange">
+                    <a class="profilBox">Password wiederholen:</a><input type="password" name="passwordrepeatChange">
+                    <button class="navButtons3" type="change">Ändern</button>
                 </div>
-                <div class="adress">
+                <div class="overview_items">
+                    <label style="font-size: 20px;" for="uni">
+                        <h3>Hochschule:</h3>
+                        <select class="uniSelect" name="uni" size="1">
+                            <option>HAW Hamburg</option>
+                            <option>Universität Hamburg</option>
+                            <option>Universität Kiel</option>
+                            <option>FH Wedel</option>
+                            <option>TUHH Hamburg</option>
+                        </select>
+                    </label>
+                    <button class="navButtons3" type="change">Ändern</button>
+                </div>
+            </form>
+            <form class="overview_grid">
+                <div class="overview_items">
                     <h3>Adresse:</h3>
-                    <a>Straße:</a><input type="text" name="street"><br>
-                    <a>Postleitzahl:</a><input type="text" name="postcode"><br>
-                    <a>Stadt:</a><input type="text" name="city"><br>
-                    <a>Land:</a><input type="text" name="country"><br>
-                    <button class="button_change" type="change">Ändern</button>
-                    <div class="universty">
-                        <label style="font-size: 20px;" for="uni">Hochschule:
-                            <select name="uni" size="1">
-                                <option>HAW Hamburg</option>
-                                <option>Universität Hamburg</option>
-                                <option>Universität Kiel</option>
-                                <option>FH Wedel</option>
-                                <option>TUHH Hamburg</option>
-                            </select>
-                        </label>
-                        <button class="button_change" type="change">Ändern</button>
-                        <div class="container">
-                            <label style="font-size: 20px;" for="gender">Geschlecht:</label>
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">Mann</label>
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="female">Frau</label>
-                            <input type="radio" id="other" name="gender" value="other">
-                            <label for="other">Divers</label>
-                        </div>
-                    </div>
+                    <a class="profilBox">Straße:</a><input type="text" name="street">
+                    <a class="profilBox">Postleitzahl:</a><input type="text" name="postcode">
+                    <a class="profilBox">Stadt:</a><input type="text" name="city">
+                    <a class="profilBox">Land:</a><input type="text" name="country">
+                    <button class="navButtons3" type="change">Ändern</button>
+                </div>
+
+                <div class="overview_items">
+                    <h3>Geschlecht:</h3>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male"><a class="profilBox">Mann</a></label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female"><a class="profilBox">Frau</a></label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other"><a class="profilBox">Divers</a></label>
+                    <button class="navButtons3" type="change">Ändern</button>
                 </div>
             </form>
         </div>

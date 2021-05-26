@@ -1,23 +1,75 @@
 @import "stylesheet_main.css";
 @import "stylesheet_userArea.css";
 
-.overview:nth-child(2){
+.overview_grid{
+    height: 0;
+}
+.overview_items:nth-child(1){
     display: grid;
+    width: unset;
+    height: unset;
+    order: 1;
+    background-color: #ffffffab;
 }
-.profileChanges{
+.overview_items:nth-child(2){
     display: grid;
+    width: unset;
+    height: unset;
+    order: 2;
+    background-color: #ffffffab;
 }
-.profileInfos{
-    width: 69vw;
-}
-.pwChange{
-    width: 69vw;
+.overview_items:nth-child(3){
+    display: grid;
+    width: unset;
+    height: unset;
+    order: 2;
+    background-color: #ffffffab;
+    border: black solid 0.1vw;
 }
 
-.adress{
-    width: 69vw;
+input{
+    margin: 0vw 2vw;
+    height: 1vw;
+    width: 10vw;
 }
 
-.universty{
-    width: 69vw;
+.navButtons3{
+    font-size: 0.755vw;
+    font-family: 'Bungee', cursive;
+    margin: 1vw 11vw;
+    background-color: #bf9f70d7;
+    width: 11vw;
+    height: 2vw;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.navButtons3:hover{
+    background-color: #be7b16d7;
+    border-radius: 0.3rem;
+} 
+
+h3{
+    margin: 0vw 12vw;
+}
+
+.profilBox{
+    margin: 0vw 2vw;
+}
+
+
+.uniSelect{
+    margin: 0vw 13vw;
+}
+
+label{
+    font-weight: unset;
+    display: inline;
+    width: 140px; 
+}
+
+.enterText{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
 }
