@@ -65,6 +65,9 @@ app.get("/toDoList", function (req, res) {
 app.get("/profil", function (req, res) {
     res.render("profil", {});
 })
+app.get("/calendar", function (req, res) {
+    res.render("calendar", {});
+})
 app.get("/userStart", function (req, res) {
     if (req.session.username) {
         res.render("userStart", {username: req.session.username});
