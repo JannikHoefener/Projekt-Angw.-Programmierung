@@ -1,5 +1,5 @@
 @import "stylesheet_main.css";
-@import "stylesheet_userArea.css";
+@import "stylesheet_userView_userArea.css";
 
 .overview_grid{
     height: 0;
@@ -67,9 +67,13 @@ label{
     display: inline;
     width: 140px; 
 }
-
+ 
 .enterText{
     display: inline-block;
     width: 150px;
     text-align: right;
+}
+ul{
+    margin: 0;    
+    text-align: center;
 }

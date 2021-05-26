@@ -60,7 +60,7 @@ app.get("/aboutUs", function (req, res) {
     res.render("aboutUsPage", {});
 })
 app.get("/profil", function (req, res) {
-    res.render("profil", {});
+    res.render("userView_profil", {});
 })
 app.get("/toDoList", function (req, res) {
     res.render("userView_toDoList", {});
@@ -79,7 +79,7 @@ app.get("/calendar", function (req, res) {
 })
 app.get("/userStart", function (req, res) {
     if (req.session.username) {
-        res.render("userStart", {username: req.session.username});
+        res.render("userView_userStart", {username: req.session.username});
     } else {
         res.redirect("landingPage")
     }
@@ -96,7 +96,7 @@ app.post("/loginCheck", function (req, res) {
         function (err, rows) {
             if (rows.length != 0 && bcrypt.compareSync(param_password, rows[0].password)) {
                 req.session.username = param_username;
-                res.render("userStart", { username: param_username });
+                res.render("userView_userStart", { username: param_username });
             } else {
                 res.render("landingPage", { error: "Benutzername und/oder Passwort falsch oder nicht vergeben!" })
             }
