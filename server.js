@@ -65,6 +65,12 @@ app.get("/toDoList", function (req, res) {
 app.get("/profil", function (req, res) {
     res.render("profil", {});
 })
+app.get("/documents", function (req, res) {
+    res.render("documents", {});
+})
+app.get("/groups", function (req, res) {
+    res.render("groups", {});
+})
 app.get("/calendar", function (req, res) {
     res.render("calendar", {});
 })

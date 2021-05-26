@@ -81,6 +81,14 @@ ul {
     height: 2vw;
     border-radius: 0.3rem;
 }
+.navButtons2{
+    margin: 5% 27%;
+    background-color: #000000d7;
+    width: 11vw;
+    height: 2vw;
+    border-radius: 0.3rem;
+    color: #ffffff;
+}
 
 a.menuLinks:hover{
     background-color: #be7b16d7;
@@ -107,6 +115,14 @@ a.menuLinks:hover{
     display: block;
     text-decoration: none;
     color: black;
+    width: 11vw;
+    height: 2vw;
+}
+
+.menuLinks2{
+    display: block;
+    text-decoration: none;
+    color: rgb(231, 229, 229);
     width: 11vw;
     height: 2vw;
 }
