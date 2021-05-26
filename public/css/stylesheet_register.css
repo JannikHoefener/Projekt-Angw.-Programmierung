@@ -114,3 +114,6 @@ select {
     /*Wrapper-Klasse für die Geschlechtsauswahl*/
     margin: 0.4vw;
 }
+.button_back{
+    margin-bottom: 0;
+}
