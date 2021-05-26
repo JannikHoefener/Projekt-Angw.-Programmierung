@@ -9,14 +9,21 @@ html {
 
 /*Klassen für die Zentrierung*/
 
-main {
+.flex-container {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
     align-items: unset;
     align-self: unset;
 }
 
 /*Linke Seite der Website mit dem Bild*/
 
-.reg_left {
+.header:nth-child(1){
+}
+
+.reg_left:nth-child(2) {
     display: flex;
     z-index: -1;
     background-image: url("../Register.jpg");
@@ -26,9 +33,11 @@ main {
     background-size: cover;
 }
 
-.reg_right {
- margin-right: 21%;
- margin-top: -5%;
+.reg_right:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 20vw;
 }
 
 /*Registerformular - Styling auf der rechten Seite der Website*/

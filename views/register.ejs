@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <main>
+    <div class="flex-container">
         <div class="header">
             <h1 class="logo">Uni - Collab'</h1>
             <!--Logo "Uni-Collab'" auf der linken Seite-->
@@ -25,9 +25,7 @@
                 <button class="impressum_button" onclick="document.location='/impressum'">Impressum</button>
             </div>
         </div>
-        <div class="reg_left">
-
-        </div>
+        <div class="reg_left"></div>
         <div class="reg_right">
             <form action="/registerdb" method="POST">
                 <h2 class="form_heading">Registrier dich...</h2>
@@ -69,13 +67,13 @@
                 <button class="button_back" onclick="document.location='/landingPage'">Zur Startseite</button>
             </form>
         </div>
-        </div>
+    </div>
 
-        <!--Error Anzeige falls etwas nicht übereinstimmt-->
-        <div style="color: red;">
-            <%=error%>
-        </div>
-    </main>
+    <!--Error Anzeige falls etwas nicht übereinstimmt-->
+    <div style="color: red;">
+        <%=error%>
+    </div>
+    </div>
 </body>
 
 </html>
