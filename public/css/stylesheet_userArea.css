@@ -75,10 +75,25 @@ ul {
 }
 
 .navButtons{
-    margin: 5% 0% 3% 25%;
+    margin: 5% 27%;
     background-color: #bf9f70d7;
-    width: 12vw;
+    width: 11vw;
     height: 2vw;
+    border-radius: 0.3rem;
+}
+
+a.menuLinks:hover{
+    background-color: #be7b16d7;
+    border-radius: 0.3rem;
+} 
+
+.activeButton{
+    margin: 5% 27%;
+    width: 11vw;
+    height: 2vw;
+    border-radius: 0.3rem;
+    background-color: #be7b16d7;
+    border-radius: 0.3rem;
 }
 
 .profilPic{
@@ -88,9 +103,12 @@ ul {
     background-size: cover;
 }
 
-a{
-  text-decoration: none;
-  color: black;
+.menuLinks{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 11vw;
+    height: 2vw;
 }
 
 li{

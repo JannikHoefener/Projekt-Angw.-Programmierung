@@ -1,0 +1,20 @@
+@import "stylesheet_main.css";
+@import "stylesheet_userArea.css";
+
+.overview:nth-child(2){
+    display: grid;
+}
+.profilInfos{
+    width: 69vw;
+}
+.pwChange{
+    width: 69vw;
+}
+
+.adress{
+    width: 69vw;
+}
+
+.universty{
+    width: 69vw;
+}
