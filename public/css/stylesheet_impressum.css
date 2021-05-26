@@ -11,7 +11,7 @@ html {
     z-index: -1;
     background-image: url("../ImpressumCut.png");
     height: 100%;
-    width: 60.375rem;
+    width: 38.3333vw;
     position: absolute;
     float: left;
     flex-direction: column;

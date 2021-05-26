@@ -74,6 +74,7 @@ label{
     text-align: right;
 }
 ul{
+    list-style-type: none;
     margin: 0;    
     text-align: center;
 }

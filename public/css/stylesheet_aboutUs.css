@@ -7,11 +7,11 @@ html {
 
 .headline {
     font-family: 'Bungee', cursive;
-    font-size: 7rem;
+    font-size: 9.0468vw;
     color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-width: 0.0323vw;
     -webkit-text-stroke-color: rgb(112, 112, 112);
-    margin-bottom: -25px;
+    margin-bottom: -2.0193vw;
     margin-top: 0%;
     text-align:center;
     margin-left: auto; 
@@ -19,23 +19,20 @@ html {
 }
 .headline2 {
     font-family: 'Bungee', cursive;
-    font-size: 6rem;
+    font-size: 3vw;
     color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-width: 0.0323vw;
     -webkit-text-stroke-color: rgb(112, 112, 112);
-    margin-top: 50px;
-    margin-bottom: 0px;
     text-align:center;
-    margin-left: auto; 
-    margin-right: auto;
+    margin: -2vw 0;
 }
 
 .aboutUsText {
     color: rgb(255, 255, 255);
-    max-width: 93.75rem;
-    font-size: 2.5rem;
-    margin-bottom: 7rem;
+    max-width: 121.1631vw;
+    font-size: 0.85vw;
     text-align:center;
+    margin: 0vw 4vw;
 }
 .magicmaker{
     max-width: fit-content;
@@ -43,19 +40,21 @@ html {
     margin-right: auto;
 }
 hr{
-    height: 2px;
+    height: 0.1615vw;
     background-color: black;
     margin-left: auto; 
     margin-right: auto;
     } 
 
 .gallery {
-    margin-bottom: 4rem;
-    border: 1px solid #ccc;
     display: flex;
-    text-align:center;
-    margin-left: auto; 
-    margin-right: auto;
+    text-align:justify;
+}
+.gallery img{
+    display: block;
+    margin: 0 auto;
+    width: 175px;
+    height: 175px;
 }
 
 .roundpic {
@@ -66,25 +65,6 @@ hr{
 .desc {
     text-align: center;
     font-family: 'Bungee', cursive;
-    font-size: 1rem;
+    font-size: 1vw;
     color: rgb(255, 255, 255);
 }
-
-.button_back {
-    /*Button unter den Funktionen um auf die Startseite zurück zu gelangen*/
-    font-family: 'Bungee', cursive;
-    height: 3.75rem;
-    width: 15rem;
-    font-size: 21px;
-    color: #EFECE9;
-    background-color: #5E5E59;
-    border: solid;
-    border-color: #707070;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-bottom: 10rem;
-}
-.button_back:hover {
-    color: #4D5258;
-    background-color: #EFECE9;
-  }

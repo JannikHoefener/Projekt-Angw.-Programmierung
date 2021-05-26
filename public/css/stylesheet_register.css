@@ -21,7 +21,7 @@ main {
     z-index: -1;
     background-image: url("../Register.jpg");
     height: 100%;
-    width: 60.375rem;
+    width: 38.333vw;
     position: absolute;
     background-size: cover;
 }
@@ -48,7 +48,7 @@ form {
     /*Text über dem Formular "Melde dich an..."*/
     margin-top: 0%;
     margin-bottom: 0%;
-    font-size: 36px;
+    font-size: 1.43vw;
     color: #26222681;
 }
 
@@ -56,70 +56,52 @@ form {
     /*Text unter dem Formular "...und starte sofort durch"*/
     margin-top: 0%;
     margin-bottom: 1%;
-    font-size: 23px;
+    font-size: 0.91vw;
     color: #26222681;
 }
 
 input[type=text] {
     /*Typ: Text*/
     font-family: 'Bungee', cursive;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
+    font-size: 0.71vw;
+    border: 0.079vw solid #ccc;
+    border-radius: 0.28vw;
     background-color: rgba(255, 255, 255, 0.582);
-    padding: 10px 20px;
+    padding: 0.4vw 0.8vw;
     margin: 2%;
 }
 
 input[type=password] {
     /*Typ: Passwort*/
     font-family: 'Bungee', cursive;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
+    font-size: 0.71vw;
+    border: 0.079vw solid #ccc;
+    border-radius: 0.28vw;
     background-color: rgba(255, 255, 255, 0.582);
-    padding: 10px 20px;
+    padding: 0.4vw 0.8vw;
     margin: 2%;
 }
 
 input[type=email] {
     /*Typ: E-Mail*/
     font-family: 'Bungee', cursive;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 7px;
+    font-size: 0.71vw;
+    border: 0.079vw solid #ccc;
+    border-radius: 0.28vw;
     background-color: rgba(255, 255, 255, 0.582);
-    padding: 10px 20px;
+    padding: 0.4vw 0.8vw;
     margin: 2%;
 }
 
 select {
     /*Styling des Auswahlfeldes für Hochschulen*/
-    padding: 10px 20px;
+    padding: 0.4vw 0.8vw;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.16vw;
     background-color: #f1f1f1;
 }
 
 .container {
     /*Wrapper-Klasse für die Geschlechtsauswahl*/
-    margin: 10px;
+    margin: 0.4vw;
 }
-
-.button_signup {
-    /*Button zur Registrierung und Weiterleitung auf userStart.ejs*/
-    font-family: 'Bungee', cursive;
-    height: 3.75rem;
-    width: 15rem;
-    font-size: 21px;
-    color: #4D5258;
-    background-color: #EFECE9;
-    border: solid;
-    border-color: #707070;
-    border-radius: 25px;
-    cursor: pointer;
-}
-.button_signup:hover {
-    color: #ffffff;
-    background-color: #5E5E59;
-  }

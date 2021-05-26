@@ -8,7 +8,7 @@ html {
 
 .function_heading {
     /*Überschrift über der jewiligen Funktion*/
-    font-size: 3.75rem;
+    font-size: 1.5vw;
     color: #5E5E59;
 }
 
@@ -18,7 +18,7 @@ html {
     flex-direction: column;
     width: 25%;
     font-family: 'Bungee', cursive;
-    font-size: 21px;
+    font-size: 1vw;
     color: #EFECE9;
     margin: 2%;
 }
@@ -29,7 +29,7 @@ html {
     flex-direction: column;
     width: 25%;
     font-family: 'Bungee', cursive;
-    font-size: 21px;
+    font-size: 1vw;
     color: #EFECE9;
     margin: 2%;
 }
@@ -40,7 +40,7 @@ html {
     flex-direction: column;
     width: 25%;
     font-family: 'Bungee', cursive;
-    font-size: 21px;
+    font-size: 1vw;
     color: #EFECE9;
     margin: 2%;
 }
@@ -51,7 +51,7 @@ html {
     flex-direction: column;
     width: 25%;
     font-family: 'Bungee', cursive;
-    font-size: 21px;
+    font-size: 1vw;
     color: #EFECE9;
     margin: 2%;
 }
