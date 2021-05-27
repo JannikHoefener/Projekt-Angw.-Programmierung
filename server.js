@@ -83,8 +83,7 @@ app.get("/userStart", function (req, res) {
     } else {
         res.redirect("landingPage")
     }
-    
-})
+});
 
 //Login Function
 app.post("/loginCheck", function (req, res) {
@@ -134,6 +133,16 @@ app.post("/registerdb", function (req, res) {
             )
         };
     });
+});
+
+//Logout - Funktion
+app.get("/logout", function (req, res) {
+    if (req.session.username) {
+        req.session.destroy();
+        res.redirect("landingPage")
+    } else {
+        location.reload()
+    };
 });
 
 //Passwort Validator
