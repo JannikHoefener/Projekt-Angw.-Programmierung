@@ -43,7 +43,7 @@ const path = require('path');
 
 //Initialize DotEnv
 const dotenv = require('dotenv');
-dotenv.config({path: './.env'});
+dotenv.config({path: './constant.env'});
 
 //Routen Verlinkung
 app.use('/', require('./routes/pages'));
