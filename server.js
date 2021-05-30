@@ -38,11 +38,27 @@ app.use(session({
 //Initialisierung bcrypt
 const bcrypt = require('bcrypt');
 
+//Initialisierung path
+const path = require('path');
+
+//Initialize DotEnv
+const dotenv = require('dotenv');
+dotenv.config({path: './.env'});
+
+//Routen Verlinkung
+app.use('/', require('./routes/pages'));
+app.use('/auth', require('./routes/auth'));
+
+//Parse URlEncoded bodies
+app.use(express.urlencoded({extended: false}));
+//Parse JSON bodies(As sent by html)
+app.use(express.json());
+
 //Server starten
 app.listen(3000, function () {
     console.log("server runs on port 3000");
 });
-
+/*
 //Zugriff auf views - Dateien
 app.get("/landingPage", function (req, res) {
     res.render("landingPage", { error: "" });
@@ -134,7 +150,7 @@ app.post("/registerdb", function (req, res) {
         };
     });
 });
-
+*/
 //Logout - Funktion
 app.get("/logout", function (req, res) {
     if (req.session.username) {
@@ -144,7 +160,7 @@ app.get("/logout", function (req, res) {
         location.reload()
     };
 });
-
+/*
 //Passwort Validator
 function isValidPW(str) {
     if (
@@ -156,3 +172,4 @@ function isValidPW(str) {
     ) return false;
     return true;
 }
+*/

@@ -1,13 +1,11 @@
 /*Tabelle benutzer erzeugen */
-CREATE TABLE loginlist (
+CREATE TABLE registerlist (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    username TEXT NOT NULL,
-    password TEXT NOT NULL
+    username VARCHAR (100) NOT NULL,
+    firstname VARCHAR (100) NOT NULL,
+    lastname VARCHAR (100) NOT NULL,
+    email VARCHAR (100) NOT NULL,
+    password VARCHAR (255) NOT NULL
 );
 
-/*Datensätze einfügen*/
-INSERT INTO loginlist (username, password) VALUES ("mrieck", "etlam");
-INSERT INTO loginlist (username, password) VALUES ("mepstein", "Sukram");
-INSERT INTO loginlist (username, password) VALUES ("jhoefener", "kinnaj");
-INSERT INTO loginlist (username, password) VALUES ("pschult", "ppilihp");
 

@@ -38,7 +38,7 @@
             </p>
 
             <!--Anmeldeformular auf der rechten Seite der .middle-Klasse-->
-            <form action="/loginCheck" method="POST">
+            <form action="/auth/login" method="POST">
                 <div class="form_heading" onclick="popup()">Melde dich an...
                     <!--PopUp-->
                     <span class="popuptext" id="myPopup">Bitte melde dich an!</span>
@@ -55,9 +55,9 @@
                 <h3 class="form_footer">... und starte sofort durch!</h3>
                 <!--Submit - Button-->
                 <button class="button_login" type="submit">Anmelden</button>
-                <div style="color: red; font-family: Helvetica;">
+               <!---- <div style="color: red; font-family: Helvetica;">
                     <%=error%>
-                </div>
+                </div>--->
             </form>
             <!--Error Anzeige falls nicht übereinstimmt-->
         </div>
