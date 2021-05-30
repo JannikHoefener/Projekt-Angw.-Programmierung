@@ -102,6 +102,21 @@ input[type=email] {
     margin: 2%;
 }
 
+.button_signup {
+    /*Registrier Button mit Weiterleitung zu register.ejs*/
+    height: 2.6vw;
+    width: 9.52vw;
+    font-family: 'Bungee', cursive;
+    font-size: 0.83vw;
+    color: #A7A5A2;
+    background-color: #EFECE9;
+    border: solid;
+    border-color: #707070;
+    border-radius: 0.99vw;
+    padding: 0.2vw;
+    cursor: pointer;
+}
+
 select {
     /*Styling des Auswahlfeldes für Hochschulen*/
     padding: 0.4vw 0.8vw;
