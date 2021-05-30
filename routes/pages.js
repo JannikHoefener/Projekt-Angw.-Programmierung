@@ -22,23 +22,23 @@ router.get("/aboutUs", function (req, res) {
     res.render("aboutUsPage", {});
 })
 router.get("/toDoList", function (req, res) {
-    res.render("toDoList", {});
+    res.render("userView_toDoList", {});
 })
 router.get("/profil", function (req, res) {
-    res.render("profil", {});
+    res.render("userView_profil", {});
 })
 router.get("/documents", function (req, res) {
-    res.render("documents", {});
+    res.render("userView_documents", {});
 })
 router.get("/groups", function (req, res) {
-    res.render("groups", {});
+    res.render("userView_groups", {});
 })
 router.get("/calendar", function (req, res) {
-    res.render("calendar", {});
+    res.render("userView_calendar", {});
 })
 router.get("/userStart", function (req, res) {
     //if (req.session.username) {
-        res.render("userStart", {username: req.session.username});
+        res.render("userView_userStart", {username: req.session.username});
    // } else {
     //    res.redirect("landingPage")
    // }

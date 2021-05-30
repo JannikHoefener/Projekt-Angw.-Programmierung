@@ -152,12 +152,15 @@ app.post("/registerdb", function (req, res) {
 });
 */
 //Logout - Funktion
-app.get("/logout", function (req, res) {
+app.get('/logout',(req,res)=>{
+    req.session.destroy(function (err) {
+      res.redirect('/landingPage'); //Inside a callback… bulletproof!
+     });
+  })
+/*app.get("/logout", function (req, res) {
     if (req.session.username) {
         req.session.destroy();
         res.redirect("landingPage")
-    } else {
-        location.reload()
     };
 });
 /*
