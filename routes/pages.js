@@ -30,6 +30,9 @@ router.get("/profil", function (req, res) {
 router.get("/documents", function (req, res) {
     res.render("userView_documents", {});
 })
+router.get("/documents2", function (req, res) {
+    res.render("userView_documents_2", {});
+})
 router.get("/groups", function (req, res) {
     res.render("userView_groups", {});
 })
