@@ -2,22 +2,25 @@
 <html>
 
 <head>
-    <!--META HUMAN-->
+    <!--Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font Type-->
+    <!--Font Type import-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Shade&display=swap"
         rel="stylesheet">
-    <!--CSS Datei-->
+    <!--CSS import-->
     <link href="/css/stylesheet_landingPage.css" rel="stylesheet">
-    <!--Überschrift-->
     <title>Willkommen!</title>
 </head>
 
 <body>
+    <!--Wrapper-Flexbox-->
     <main>
+        <!--CSS Flexbox Header-->
         <div class="header">
+            <!--Logo "Uni-Collab'" left side-->
             <h1 class="logo">Uni - Collab'</h1>
+            <!--Header Buttons right side-->
             <div class="header_buttons">
                 <button class="function_button" onclick="document.location='/funktion'">Funktion</button>
                 <button class="aboutUs_button" onclick="document.location='/aboutUs'">Über uns</button>
@@ -31,7 +34,7 @@
         </div>
 
         <div class="middle">
-            <!--Registrierebn auf der linken Seite der .middle-Klasse-->
+            <!--Registrieren auf der linken Seite der .middle-Klasse-->
             <p class="texte">
                 Neu Hier? Kein Problem!
                 <button class="button_register" onclick="document.location='/register'">Registrieren</button>
@@ -55,11 +58,7 @@
                 <h3 class="form_footer">... und starte sofort durch!</h3>
                 <!--Submit - Button-->
                 <button class="button_login" type="submit">Anmelden</button>
-               <!---- <div style="color: red; font-family: Helvetica;">
-                    <%=error%>
-                </div>--->
             </form>
-            <!--Error Anzeige falls nicht übereinstimmt-->
         </div>
     </main>
 

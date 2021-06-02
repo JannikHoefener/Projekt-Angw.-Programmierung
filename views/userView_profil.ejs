@@ -4,30 +4,38 @@
 <head>
     <!--Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Type import-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Shade&display=swap"
         rel="stylesheet">
+    <!--CSS import-->
     <link href="/css/stylesheet_userView_profil.css" rel="stylesheet">
-    <!--Das ist der Titel-->
     <title>Profil</title>
 </head>
 
 <body>
+    <!--Main Flexbox-->
     <div class="flex-container">
+        <!--Navigation Bar Flexbox-->
         <div class="navbar">
+            <!--Menu Buttons-->
             <div class="menu_container">
+                <!--Elements in the menu-->
                 <div class="menu-items">
+                    <!--Logo "Uni-Collab'" left side-->
                     <h1 class="logo">Uni - Collab'</h1>
                 </div>
                 <div class="menu-items">
+                    <!--Profile Picture in the Navigation Bar-->
                     <div class="profilPic"></div>
                 </div>
                 <div class="menu-items">
+                    <!--Navigation items (unlisted list)-->
                     <ul class="navCon">
-                        <li class="activeButton"><a class="menuLinks" href="profil">Profil</a></li>
+                        <li class="navButtons"><a class="menuLinks" href="profil">Profil</a></li>
                         <li class="navButtons"><a class="menuLinks" href="userStart">Startseite</a></li>
                         <li class="navButtons"><a class="menuLinks" href="toDoList">To-Do</a></li>
-                        <li class="navButtons"><a class="menuLinks" href="calendar">Kalender</a></li>
+                        <li class="activeButton"><a class="menuLinks" href="calendar">Kalender</a></li>
                         <li class="navButtons"><a class="menuLinks" href="documents">Dokumente</a></li>
                         <li class="navButtons"><a class="menuLinks" href="groups">Gruppen</a></li>
                         <br>
@@ -39,13 +47,15 @@
                 </div>
             </div>
         </div>
+        <!--Flex Grid-->
         <div class="overview">
+            <!--Flex Items-->
             <form class="overview_grid">
+                <!--Seperation of items-->
                 <div class="overview_items">
                     <h3>Profil Infos:</h3>
 
                     <ul>
-
                         <li>Vorname:<input type="text" name="firstname"></li>
                         <li>Nachname:<input type="text" name="lastname"></li>
                         <li>Benutzername:<input type="text" name="usernameChange"></li>
@@ -77,6 +87,8 @@
                     <button class="navButtons3" type="change">Ändern</button>
                 </div>
             </form>
+
+            <!--Flex Items-->
             <form class="overview_grid">
                 <div class="overview_items">
                     <h3>Adresse:</h3>
@@ -107,8 +119,6 @@
                 </div>
             </form>
         </div>
-    </div>
-
     </div>
 
 </body>

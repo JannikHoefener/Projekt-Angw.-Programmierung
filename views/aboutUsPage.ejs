@@ -2,29 +2,34 @@
 <html>
 
 <head>
+    <!--Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font Type-->
+    <!--Font Type import-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Shade&display=swap"
         rel="stylesheet">
-    <title>About Us</title>
+    <!--CSS import-->
     <link href="/css/stylesheet_aboutUs.css" rel="stylesheet">
+    <title>About Us</title>
 </head>
 
 <body>
+    <!--Wrapper-Flexbox-->
     <main>
+        <!--CSS Flexbox Header-->
         <div class="header">
+            <!--Logo "Uni-Collab'" left side-->
             <h1 class="logo">The Uni - Collab' Story</h1>
-            <!--Logo "Uni-Collab'" auf der linken Seite-->
-
+            <!--Header Buttons right side-->
             <div class="header_buttons">
                 <button class="function_button" onclick="document.location='/funktion'">Funktion</button>
                 <button class="aboutUs_button" onclick="document.location='/aboutUs'">Über uns</button>
                 <button class="impressum_button" onclick="document.location='/impressum'">Impressum</button>
             </div>
-
         </div>
+        <!--Middle Flexbox-->
         <div class="middle">
+            <!--Example Text-->
             <p class="aboutUsText">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et
@@ -58,52 +63,40 @@
             </p>
         </div>
 
+        <!--Bottom (no Flexbox)-->
         <div class="magicmaker">
+            <!--Decoration Line-->
             <hr width="100%" size="2">
-
+            <!--Title-->
             <h2 class="headline2">
                 The Magicmaker
             </h2>
+            <!--Pictures Flexbox-->
             <div class="gallery">
-                <!--Bild Malte -->
+                <!--Pic Malte -->
                 <figure>
                     <img src="Malte.png" alt="Malte Rieck" class="roundpic" Malte Rieck>
                     <p class="desc">Malte Rieck</p>
                 </figure>
-                <!--Bild Phillipp -->
+                <!--Pic Phillipp -->
                 <figure>
                     <img src="Phillipp.png" alt="Philipp Schult" class="roundpic">
                     <p class="desc">Philipp Schult</p>
                 </figure>
-                <!--Bild Markus -->
+                <!--Pic Markus -->
                 <figure>
                     <img src="Markus.png" alt="Markus Epstein" class="roundpic">
                     <p class="desc">Markus Epstein</p>
                 </figure>
-                <!--Bild Jannik -->
+                <!--Pic Jannik -->
                 <figure>
                     <img src="Jannik.png" alt="Jannik Hoeffner" class="roundpic">
                     <p class="desc">Jannik Hoeffner</p>
                 </figure>
             </div>
-            <div>
-               
-            </div>
         </div>
-        <br>
+        <!--Button Back to Site-->
         <button class="button_back" onclick="window.location.href='/landingPage'">Zur Startseite</button><br>
-
-
-        <script>
-            function check() {
-                var x = document.getElementsByClassName("password");
-                if (x.type === "password") {
-                    x.type = "text"; //ändert beim draufklicken den "input-type" zu text, wodurch das eingetippte sichtbar wird
-                } else {
-                    x.type = "password"; //beim entklicken wir das auf password zurückgesetzt
-                }
-            }
-        </script>
     </main>
 </body>
 

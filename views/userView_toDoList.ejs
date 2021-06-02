@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Meta-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesheet_userView_toDoList.css">
-    <!--Font Type-->
+    <!--Font Type import-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Shade&display=swap"
         rel="stylesheet">
+    <!--CSS import-->
+    <link rel="stylesheet" href="/css/stylesheet_userView_toDoList.css">
     <title>To Do List</title>
 </head>
 
 <body>
+    <!--Main Flexbox-->
     <div class="flex-container">
+        <!--Navigation Bar Flexbox-->
         <div class="navbar">
+            <!--Menu Buttons-->
             <div class="menu_container">
+                <!--Elements in the menu-->
                 <div class="menu-items">
+                    <!--Logo "Uni-Collab'" left side-->
                     <h1 class="logo">Uni - Collab'</h1>
                 </div>
                 <div class="menu-items">
+                    <!--Profile Picture in the Navigation Bar-->
                     <div class="profilPic"></div>
                 </div>
                 <div class="menu-items">
+                    <!--Navigation items (unlisted list)-->
                     <ul class="navCon">
                         <li class="navButtons"><a class="menuLinks" href="profil">Profil</a></li>
                         <li class="navButtons"><a class="menuLinks" href="userStart">Startseite</a></li>
-                        <li class="activeButton"><a class="menuLinks" href="toDoList">To-Do</a></li>
-                        <li class="navButtons"><a class="menuLinks" href="calendar">Kalender</a></li>
+                        <li class="navButtons"><a class="menuLinks" href="toDoList">To-Do</a></li>
+                        <li class="activeButton"><a class="menuLinks" href="calendar">Kalender</a></li>
                         <li class="navButtons"><a class="menuLinks" href="documents">Dokumente</a></li>
                         <li class="navButtons"><a class="menuLinks" href="groups">Gruppen</a></li>
                         <br>
@@ -39,53 +46,57 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-
+        <!--Flex Grid-->
         <div class="overview">
-                <h1 class="headline">Deine Aufgaben Liste </h1>
-
-                <div class="howto">
-                    <h2 class="headline2">Funktionsweise:</h2>
-                    <ol class="explaineList">
-                        <li class="steps">Aufgabe erstellen</li>
-                        <li class="steps">einfacher Klick: Aufgabe als erledigt markieren</li>
-                        <li class="steps">doppel Klick: aufgabe löschen</li>
-                    </ol>
-                    <hr>
-                </div>
-
-                <div class="container">
-                    <h3 class="headline3">neue Aufgaben erstellen </h3>
-                    <input id="inputField" type="text" placeholder="neue Aufgabe eingeben">
-                    <button id="addToDo">+</button>
-                </div>
-
-                <h3 class="headline3">aktuelle Aufgaben</h3>
-                <div class="toDos" id="toDoContainer">
-                </div>
+            <!--Title To-Do list-->
+            <h1 class="headline">Deine Aufgaben Liste </h1>
+            <!--Explanation-->
+            <div class="howto">
+                <h2 class="headline2">Funktionsweise:</h2>
+                <ol class="explaineList">
+                    <li class="steps">Aufgabe erstellen</li>
+                    <li class="steps">einfacher Klick: Aufgabe als erledigt markieren</li>
+                    <li class="steps">doppel Klick: aufgabe löschen</li>
+                </ol>
+                <hr>
             </div>
-        </div>  
-    </div>       
-            <script> let addToDoButton = document.getElementById('addToDo');
-                let toDoContainer = document.getElementById('toDoContainer');
-                let inputField = document.getElementById('inputField');
+            <!--Input for ToDo's-->
+            <div class="container">
+                <h3 class="headline3">neue Aufgaben erstellen </h3>
+                <input id="inputField" type="text" placeholder="neue Aufgabe eingeben">
+                <button id="addToDo">+</button>
+            </div>
+            <!--your ToDo's-->
+            <h3 class="headline3">aktuelle Aufgaben</h3>
+            <div class="toDos" id="toDoContainer">
+            </div>
+        </div>
+    </div>
 
-                addToDoButton.addEventListener('click', function () {
-                    var paragraph = document.createElement('p');
-                    paragraph.classList.add('paragraph-styling')
-                    paragraph.innerText = inputField.value;
-                    toDoContainer.appendChild(paragraph);
-                    inputField.value = "";
-                    paragraph.addEventListener('click', function () {
-                        paragraph.style.textDecoration = "line-through";
-                        paragraph.style.color = "#5a534c";
-                        paragraph.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
-                    });
-                    paragraph.addEventListener('dblclick', function () {
-                        toDoContainer.removeChild(paragraph);
-                    });
-                });</script>
+    <!--JavaScript for ToDo-->
+    <script>
+        let addToDoButton = document.getElementById('addToDo');
+        let toDoContainer = document.getElementById('toDoContainer');
+        let inputField = document.getElementById('inputField');
+
+        addToDoButton.addEventListener('click', function () {
+            var paragraph = document.createElement('p');
+            paragraph.classList.add('paragraph-styling')
+            paragraph.innerText = inputField.value;
+            toDoContainer.appendChild(paragraph);
+            inputField.value = "";
+            paragraph.addEventListener('click', function () {
+                paragraph.style.textDecoration = "line-through";
+                paragraph.style.color = "#5a534c";
+                paragraph.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+            });
+            paragraph.addEventListener('dblclick', function () {
+                toDoContainer.removeChild(paragraph);
+            });
+        });
+    </script>
+
 </body>
 
 </html>
