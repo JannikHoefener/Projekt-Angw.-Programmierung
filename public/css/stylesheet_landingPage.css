@@ -14,8 +14,8 @@
     margin-right: 8%;
 }
 
+/*Register button forwarded to register site*/
 .button_register {
-    /*Registrier Button mit Weiterleitung zu register.ejs*/
     font-family: 'Bungee', cursive;
     font-size: 0.83vw;
     color: #A7A5A2;
@@ -27,13 +27,13 @@
     cursor: pointer;
 }
 
+
 .button_register:hover {
     color: #ffffff;
     background-color: #5E5E59;
 }
 
-/*Anmeldeformular - Styling auf der rechten Seite der .middle-Klasse*/
-
+/*Loginform + Flexbox and Text adjustments*/
 form {
     display: flex;
     flex-direction: column;
@@ -50,8 +50,8 @@ form {
     margin-left: 5%
 }
 
+/*Text adjustment head*/
 .form_heading {
-    /*Text über dem Formular "Melde dich an..."*/
     margin-top: 0%;
     margin-bottom: 0%;
     font-size:  1.43vw;
@@ -62,15 +62,14 @@ form {
     user-select: none;
 }
 
+ /*Text adjustment footer*/
 .form_footer {
-    /*Text unter dem Formular "...und starte sofort durch"*/
     margin-top: 0%;
     margin-bottom: 1%;
     font-size: 0.67vw;
 }
 
 .button_login {
-    /*Button zur Anmeldeverifizierung und Weiterleitung auf userStart.ejs*/
     font-family: 'Bungee', cursive;
     font-size: 0.63vw;
     color: #A7A5A2;
@@ -100,7 +99,7 @@ input[type=text] {
 }
 
 input[type=password] {
-    /*Typ: Passwort*/
+    /*Typ: Password*/
     height: 2.2vw;
     width: 8.52vw;
     font-size: 0.51vw;

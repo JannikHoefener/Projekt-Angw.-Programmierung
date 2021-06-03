@@ -4,7 +4,7 @@ html {
     background-image: none;
     background-color: #D6CFC8;
 }
-
+/* Text adjustment */
 .headline {
     font-family: 'Bungee', cursive;
     font-size: 9.0468vw;
@@ -17,6 +17,7 @@ html {
     margin-left: auto; 
     margin-right: auto;
 }
+/* Text adjustment */
 .headline2 {
     font-family: 'Bungee', cursive;
     font-size: 3vw;
@@ -26,7 +27,7 @@ html {
     text-align:center;
     margin: -2vw 0;
 }
-
+/* Text adjustment */
 .aboutUsText {
     color: rgb(255, 255, 255);
     max-width: 121.1631vw;
@@ -34,34 +35,37 @@ html {
     text-align:center;
     margin: 0vw 4vw;
 }
+/*Flex Box Pictures/Decoration/Names*/
 .magicmaker{
     max-width: fit-content;
     margin-left: auto; 
     margin-right: auto;
 }
+/*Decoration Line*/
 hr{
     height: 0.1615vw;
     background-color: black;
     margin-left: auto; 
     margin-right: auto;
     } 
-
+/*Pictures */
 .gallery {
     display: flex;
     text-align:justify;
 }
+/*Pictures adjustment*/
 .gallery img{
     display: block;
     margin: 0 auto;
     width: 175px;
     height: 175px;
 }
-
+/*Pictures adjustment*/
 .roundpic {
     border-radius: 50%;
     text-align: center;
 }
-
+/*Names*/
 .desc {
     text-align: center;
     font-family: 'Bungee', cursive;

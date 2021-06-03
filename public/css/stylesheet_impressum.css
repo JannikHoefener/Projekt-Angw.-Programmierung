@@ -1,12 +1,13 @@
+/*Import*/
 @import "stylesheet_main.css";
-/*Hintergrundfarbe für die "Impressum" - Seite*/
+
+/*Background override for Impressum*/
 html {
     background-image: none;
     background-color: #D6CFC8;
 }
 
-/*Linke Seite der Website mit dem Bild*/
-
+/*Left side override for impressum*/
 .reg_left {
     z-index: -1;
     background-image: url("../ImpressumCut.png");

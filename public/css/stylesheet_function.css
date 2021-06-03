@@ -6,14 +6,13 @@ html {
 }
 /*Einzelne rows für die jeweiligen Funktionen*/
 
-.function_heading {
-    /*Überschrift über der jewiligen Funktion*/
+/*Überschrift über der jewiligen Funktion*/
+.function_heading { 
     font-size: 1.5vw;
     color: #5E5E59;
 }
-
-.calendar_row {
-    /*Kalender - Row*/
+/*Kalender - Row*/
+.calendar_row {  
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -22,9 +21,8 @@ html {
     color: #EFECE9;
     margin: 2%;
 }
-
+/*ToDo - Row*/
 .todo_row {
-    /*ToDo - Row*/
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -34,8 +32,8 @@ html {
     margin: 2%;
 }
 
+/*Gruppen - Row*/
 .group_row {
-    /*Gruppen - Row*/
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -45,8 +43,8 @@ html {
     margin: 2%;
 }
 
-.doc_row {
-    /*Dokumenten - Row*/
+/*Dokumenten - Row*/
+.doc_row {    
     display: flex;
     flex-direction: column;
     width: 25%;

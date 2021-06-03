@@ -1,14 +1,13 @@
+/*Import from Main*/
 @import "stylesheet_main.css";
 
-/*Hintergrundfarbe für die "Register" - Seite*/
-
+/*Background override for register*/
 html {
     background-image: none;
     background-color: #D6CFC8;
 }
 
-/*Klassen für die Zentrierung*/
-
+/*Flex Container*/
 .flex-container {
     display: grid;
     flex-direction: row;
@@ -18,8 +17,7 @@ html {
     align-self: unset;
 }
 
-/*Linke Seite der Website mit dem Bild*/
-
+/*Flexbox childs*/
 .header:nth-child(1){
 }
 
@@ -40,8 +38,7 @@ html {
     margin: 0 20vw;
 }
 
-/*Registerformular - Styling auf der rechten Seite der Website*/
-
+/*Form adjustments*/
 form {
     float: right;
     display: flex;
@@ -54,7 +51,6 @@ form {
 }
 
 .form_heading {
-    /*Text über dem Formular "Melde dich an..."*/
     margin-top: 0%;
     margin-bottom: 0%;
     font-size: 1.43vw;
@@ -62,13 +58,13 @@ form {
 }
 
 .form_footer {
-    /*Text unter dem Formular "...und starte sofort durch"*/
     margin-top: 0%;
     margin-bottom: 1%;
     font-size: 0.91vw;
     color: #26222681;
 }
 
+/*Input Text adjustments*/
 input[type=text] {
     /*Typ: Text*/
     font-family: 'Bungee', cursive;
@@ -81,7 +77,7 @@ input[type=text] {
 }
 
 input[type=password] {
-    /*Typ: Passwort*/
+    /*Typ: Password*/
     font-family: 'Bungee', cursive;
     font-size: 0.71vw;
     border: 0.079vw solid #ccc;
@@ -102,8 +98,8 @@ input[type=email] {
     margin: 2%;
 }
 
+/*Register button*/
 .button_signup {
-    /*Registrier Button mit Weiterleitung zu register.ejs*/
     height: 2.6vw;
     width: 9.52vw;
     font-family: 'Bungee', cursive;
@@ -117,18 +113,19 @@ input[type=email] {
     cursor: pointer;
 }
 
+/*Styling for the dropdown menu*/
 select {
-    /*Styling des Auswahlfeldes für Hochschulen*/
     padding: 0.4vw 0.8vw;
     border: none;
     border-radius: 0.16vw;
     background-color: #f1f1f1;
 }
 
+/*Container for the gender*/
 .container {
-    /*Wrapper-Klasse für die Geschlechtsauswahl*/
     margin: 0.4vw;
 }
+/*Simple backbutton*/
 .button_back{
     margin-bottom: 0;
 }
