@@ -53,7 +53,7 @@ exports.login = async (req,res) => {
         }
         
         db.all(`SELECT * FROM registerlist WHERE username='${username}'`, async (error,rows) =>{
-            if ( rows.length == 0 || !bcrypt.compare(password, rows[0].password) ){
+            if ( rows.length == 0 || !bcrypt.compareSync(password, rows[0].password) ){
                 res.status(401).render('landingPage', {
                     error: 'Nutzername oder Passwort falsch!'
                 })
